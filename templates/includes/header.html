@@ -1,0 +1,174 @@
+<!-- Top Bar -->
+<div class="top-bar d-none d-lg-block">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-3">
+                <span><i class="fas fa-code"></i> تعلم Python و Odoo باحترافية</span>
+                <span class="divider">|</span>
+                <span><i class="fas fa-check-circle"></i> محتوى عربي 100%</span>
+            </div>
+          <div class="d-flex gap-3">
+    <a href="{% url 'core:about' %}" class="top-link"><i class="fas fa-user"></i> من أنا</a>
+    <a href="{% url 'contact:contact' %}" class="top-link"><i class="fas fa-envelope"></i> اتصل بي</a>
+    <a href="https://github.com/waleednemer" class="top-link" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/alwaleednasraldin" class="top-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg main-navbar fixed-top" id="mainNav">
+    <div class="container">
+        <a href="{% url 'core:home' %}" class="navbar-brand d-flex align-items-center gap-3 text-decoration-none">
+            <div class="logo-icon-wrapper">
+                <div class="logo-icon">
+                    <span class="bracket">&lt;</span>
+                    <span class="slash">/</span>
+                    <span class="bracket">&gt;</span>
+                </div>
+                <div class="logo-glow"></div>
+            </div>
+            <div class="logo-text-wrapper">
+                <span class="logo-main">Code<span class="logo-accent">Next</span></span>
+                <span class="logo-sub">Python & Odoo بالعربية</span>
+            </div>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'core:home' %}">
+                        <i class="fas fa-home"></i><span>الرئيسية</span>
+                    </a>
+                </li>
+                
+                <!-- Python Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle {% if '/python/' in request.path or '/category/python-' in request.path %}active{% endif %}" href="#" data-bs-toggle="dropdown">
+                        <i class="fab fa-python"></i><span>تعلم Python</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="{% url 'core:python' %}"><i class="fas fa-layer-group"></i> جميع مسارات Python</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'blog:category' slug='python-basics' %}">🐍 Python Basics</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blog:category' slug='python-oop' %}">🏗️ Python OOP</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blog:category' slug='python-advanced' %}">🚀 Python Advanced</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blog:category' slug='python-projects' %}">🧡 Python Projects</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Odoo Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle {% if '/odoo/' in request.path or '/category/odoo-' in request.path %}active{% endif %}" href="#" data-bs-toggle="dropdown">
+                        <i class="fas fa-cubes"></i><span>تعلم Odoo</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="{% url 'core:odoo' %}"><i class="fas fa-layer-group"></i> جميع مسارات Odoo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{% url 'blog:category' slug='odoo-basics' %}">🟢 Odoo Basics</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blog:category' slug='odoo-development' %}">🟡 Odoo Development</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blog:category' slug='odoo-advanced' %}">🔴 Odoo Advanced</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blog:category' slug='odoo-projects' %}">⬛ Odoo Projects</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link {% if '/articles/' in request.path or '/article/' in request.path %}active{% endif %}" href="{% url 'blog:article_list' %}">
+                        <i class="fas fa-book-open"></i><span>جميع الدروس</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if '/about/' in request.path %}active{% endif %}" href="{% url 'core:about' %}">
+                        <i class="fas fa-user-circle"></i><span>من أنا</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="navbar-right d-flex align-items-center gap-3">
+                <button class="search-toggle-btn" id="searchToggle" title="بحث"><i class="fas fa-search"></i></button>
+                <a href="{% url 'core:python' %}" class="btn btn-cta d-none d-lg-flex"><i class="fas fa-play-circle"></i> ابدأ الآن</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay">
+    <div class="search-overlay-content">
+        <button class="search-close" id="searchClose">&times;</button>
+        <h3 class="text-white mb-4">ابحث عن درس</h3>
+        <form action="{% url 'search:search' %}" method="GET">
+            <div class="search-input-group">
+                <input type="search" name="q" class="search-input" placeholder="اكتب كلمة البحث..." autofocus>
+                <button type="submit" class="search-submit"><i class="fas fa-search"></i> بحث</button>
+            </div>
+        </form>
+        <div class="search-suggestions mt-4">
+            <span class="text-white-50">اقتراحات:</span>
+            <a href="{% url 'search:search' %}?q=المتغيرات">المتغيرات</a>
+            <a href="{% url 'search:search' %}?q=odoo">Odoo</a>
+            <a href="{% url 'search:search' %}?q=الكلاسات">الكلاسات</a>
+            <a href="{% url 'search:search' %}?q=api">API</a>
+        </div>
+    </div>
+</div>
+
+<div class="navbar-spacer"></div>
+
+<style>
+    .top-bar { background: #1a1a2e; color: rgba(255,255,255,0.7); font-size: 0.8rem; padding: 6px 0; position: fixed; top: 0; left: 0; right: 0; z-index: 1040; }
+    .top-bar .divider { color: rgba(255,255,255,0.3); }
+    .top-link { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.3s; font-size: 0.8rem; }
+    .top-link:hover { color: white; }
+    .main-navbar { background: rgba(13, 110, 253, 0.95); backdrop-filter: blur(20px); transition: all 0.4s ease; padding: 12px 0; top: 30px; z-index: 1030; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .main-navbar.scrolled { background: rgba(13, 110, 253, 0.98); box-shadow: 0 10px 40px rgba(0,0,0,0.2); padding: 8px 0; }
+    .logo-icon-wrapper { position: relative; display: inline-block; }
+    .logo-icon { width: 44px; height: 44px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-family: 'Courier New', monospace; font-weight: 900; font-size: 18px; transition: all 0.4s; box-shadow: 0 5px 20px rgba(0,0,0,0.2); position: relative; z-index: 2; animation: logoPulse 3s ease-in-out infinite; }
+    .logo-icon:hover { transform: rotate(-10deg) scale(1.1); }
+    .logo-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: white; border-radius: 12px; opacity: 0; z-index: 1; transition: all 0.4s; }
+    .logo-icon:hover + .logo-glow { opacity: 0.3; width: 58px; height: 58px; border-radius: 16px; filter: blur(10px); }
+    .logo-icon .bracket { color: #0d6efd; } .logo-icon .slash { color: #6f42c1; margin: 0 -2px; }
+    @keyframes logoPulse { 0%,100%{box-shadow:0 5px 20px rgba(0,0,0,0.2)} 50%{box-shadow:0 5px 25px rgba(255,212,59,0.4)} }
+    .logo-text-wrapper { line-height: 1.2; } .logo-main { font-size: 1.4rem; font-weight: 900; color: white; } .logo-accent { color: #FFD43B; } .logo-sub { display: block; font-size: 0.65rem; color: rgba(255,255,255,0.7); }
+    .navbar .nav-link { color: rgba(255,255,255,0.85)!important; padding: 0.6rem 1rem; margin: 0 3px; border-radius: 10px; font-weight: 500; font-size: 0.95rem; transition: all 0.3s; display: flex; align-items: center; gap: 0.4rem; }
+    .navbar .nav-link:hover { color: white!important; background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+    .navbar .nav-link.active { color: white!important; background: rgba(255,255,255,0.2); font-weight: 600; }
+    .dropdown-menu { background: white; border: none; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); padding: 0.5rem; margin-top: 10px; min-width: 220px; }
+    .dropdown-item { border-radius: 10px; padding: 0.7rem 1.2rem; transition: all 0.2s; font-weight: 500; }
+    .dropdown-item:hover { background: #f0f7ff; color: #0d6efd; padding-right: 1.8rem; }
+    .search-toggle-btn { width: 42px; height: 42px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.3); background: transparent; color: white; font-size: 1.1rem; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; }
+    .search-toggle-btn:hover { background: rgba(255,255,255,0.15); border-color: white; }
+    .btn-cta { background: white; color: #0d6efd!important; font-weight: 700; padding: 0.6rem 1.5rem; border-radius: 50px; transition: all 0.3s; font-size: 0.9rem; box-shadow: 0 5px 20px rgba(0,0,0,0.2); text-decoration: none; }
+    .btn-cta:hover { transform: translateY(-2px); background: #FFD43B; color: #333!important; }
+    .search-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.95); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.3s; }
+    .search-overlay.active { opacity: 1; visibility: visible; }
+    .search-overlay-content { text-align: center; width: 90%; max-width: 600px; }
+    .search-close { position: absolute; top: 30px; right: 30px; background: none; border: none; color: white; font-size: 3rem; cursor: pointer; }
+    .search-close:hover { transform: rotate(90deg); }
+    .search-input { width: 100%; padding: 1.2rem 2rem; font-size: 1.2rem; border: 2px solid rgba(255,255,255,0.2); border-radius: 50px; background: rgba(255,255,255,0.1); color: white; outline: none; }
+    .search-input:focus { border-color: #FFD43B; }
+    .search-submit { margin-top: 1rem; padding: 0.8rem 2.5rem; background: #FFD43B; color: #333; border: none; border-radius: 50px; font-weight: 700; cursor: pointer; }
+    .search-submit:hover { transform: scale(1.05); }
+    .search-suggestions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+    .search-suggestions a { color: rgba(255,255,255,0.7); text-decoration: none; padding: 0.4rem 1rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; font-size: 0.85rem; }
+    .search-suggestions a:hover { background: rgba(255,255,255,0.15); color: #FFD43B; }
+    .toggler-icon { color: white; font-size: 1.4rem; }
+    .navbar-spacer { height: 118px; }
+    @media (max-width: 991px) { .top-bar { display: none!important; } .main-navbar { top: 0; padding: 10px 0; } .navbar-spacer { height: 66px; } .btn-cta { display: none!important; } }
+</style>
+
+<script>
+    window.addEventListener('scroll', function() {
+        document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const st=document.getElementById('searchToggle'),so=document.getElementById('searchOverlay'),sc=document.getElementById('searchClose');
+    st?.addEventListener('click',()=>{so.classList.add('active');so.querySelector('input')?.focus();});
+    sc?.addEventListener('click',()=>so.classList.remove('active'));
+    document.addEventListener('keydown',(e)=>{if(e.key==='Escape')so.classList.remove('active');});
+    so?.addEventListener('click',(e)=>{if(e.target===so)so.classList.remove('active');});
+</script>

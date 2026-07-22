@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}تعلم Odoo - مسارات التعلم | CodeNext{% endblock %}
+
+{% block meta %}
+<meta name="description" content="تعلم Odoo ERP من الصفر إلى الاحتراف مع مسارات تعلم منظمة - Odoo Basics، Odoo Development، Odoo Advanced">
+<meta property="og:title" content="تعلم Odoo - CodeNext">
+<meta property="og:description" content="اختر مسار التعلم المناسب لك وابدأ رحلتك في عالم Odoo ERP">
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .page-header { background: linear-gradient(135deg, #875A7B 0%, #a24089 50%, #5c3a5c 100%); padding: 80px 0 60px; position: relative; overflow: hidden; }
+    .page-header::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: rgba(255,255,255,0.05); border-radius: 50%; animation: pulse 4s ease-in-out infinite; }
+    .page-header::after { content: ''; position: absolute; bottom: -30%; left: -10%; width: 400px; height: 400px; background: rgba(255,255,255,0.03); border-radius: 50%; animation: pulse 4s ease-in-out 1s infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.1)} }
+    .page-header-content { position: relative; z-index: 2; }
+    .breadcrumb { background: transparent; padding: 0; margin-bottom: 1.5rem; }
+    .breadcrumb-item a { color: rgba(255,255,255,0.8); text-decoration: none; }
+    .breadcrumb-item.active { color: white; }
+    .breadcrumb-item+.breadcrumb-item::before { color: rgba(255,255,255,0.6); }
+    
+    .path-card { border: none; border-radius: 24px; overflow: hidden; transition: all 0.4s; background: white; box-shadow: 0 10px 40px rgba(0,0,0,0.08); height: 100%; display: flex; flex-direction: column; }
+    .path-card:hover { transform: translateY(-12px); box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+    .path-card-header { padding: 25px 20px 15px; text-align: center; position: relative; }
+    .path-card-header.odoo-basics { background: linear-gradient(135deg, #875A7B 0%, #a24089 100%); }
+    .path-card-header.odoo-development { background: linear-gradient(135deg, #5c3a5c 0%, #875A7B 100%); }
+    .path-card-header.odoo-advanced { background: linear-gradient(135deg, #3a1a3a 0%, #5c3a5c 100%); }
+    .path-card-header.odoo-projects { background: linear-gradient(135deg, #1a0a1a 0%, #3a1a3a 100%); }
+    .path-icon { width: 70px; height: 70px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.8rem; color: white; border: 3px solid rgba(255,255,255,0.3); transition: all 0.3s; }
+    .path-card:hover .path-icon { transform: rotate(10deg) scale(1.1); background: rgba(255,255,255,0.3); }
+    .level-badge { position: absolute; top: 20px; left: 20px; padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; background: rgba(255,255,255,0.25); color: white; backdrop-filter: blur(10px); }
+    .path-card-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
+    .path-stats { display: flex; justify-content: space-around; margin: 25px 0; padding: 20px 0; border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0; }
+    .path-stat { text-align: center; } .path-stat-value { font-size: 1.8rem; font-weight: 700; color: #333; } .path-stat-label { font-size: 0.85rem; color: #888; margin-top: 5px; }
+    .path-topics { list-style: none; padding: 0; margin: 20px 0; flex: 1; }
+    .path-topics li { padding: 8px 0; color: #666; font-size: 0.9rem; display: flex; align-items: center; }
+    .path-topics li i { color: #28a745; margin-left: 10px; font-size: 0.8rem; }
+    
+    .step-card { text-align: center; padding: 40px 20px; position: relative; }
+    .step-number { width: 70px; height: 70px; background: linear-gradient(135deg, #875A7B, #a24089); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 700; margin: 0 auto 1.5rem; box-shadow: 0 10px 30px rgba(135,90,123,0.3); }
+    .step-connector { position: absolute; top: 35px; right: -30px; width: 60px; height: 2px; background: #dee2e6; }
+    @media (max-width: 768px) { .step-connector { display: none; } }
+    .accordion-button:not(.collapsed) { background: linear-gradient(135deg, #875A7B, #a24089); color: white; }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container page-header-content">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'core:home' %}">الرئيسية</a></li>
+                <li class="breadcrumb-item active">تعلم Odoo</li>
+            </ol>
+        </nav>
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold text-white mb-4">
+                    تعلم Odoo
+                    <span style="background: linear-gradient(to left, #ffd700, #ff6b6b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">باحترافية</span>
+                </h1>
+                <p class="lead text-white opacity-90 mb-4">رحلة تعلم متكاملة في نظام Odoo ERP. من التثبيت إلى التطوير المتقدم. محتوى عربي 100% مع أمثلة عملية وتطبيقات حقيقية.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <div class="d-flex align-items-center text-white"><i class="fas fa-check-circle text-success me-2"></i><span>محتوى محدث Odoo 17</span></div>
+                    <div class="d-flex align-items-center text-white"><i class="fas fa-check-circle text-success me-2"></i><span>مشاريع عملية</span></div>
+                    <div class="d-flex align-items-center text-white"><i class="fas fa-check-circle text-success me-2"></i><span>دعم فني</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5"><h2 class="display-5 fw-bold mb-3">اختر مسار Odoo</h2><p class="lead text-muted">أربعة مسارات متدرجة تناسب جميع المستويات</p></div>
+        <div class="row g-4">
+            {% for category in categories %}
+            {% if 'odoo' in category.slug %}
+            <div class="col-lg-3 col-md-6 d-flex">
+                <div class="card path-card h-100 w-100">
+                    {% if 'basics' in category.slug %}
+                    <div class="path-card-header odoo-basics"><span class="level-badge">مبتدئ</span><div class="path-icon"><i class="fas fa-database"></i></div><h3 class="text-white">{{ category.name }}</h3></div>
+                    {% elif 'development' in category.slug %}
+                    <div class="path-card-header odoo-development"><span class="level-badge">متوسط</span><div class="path-icon"><i class="fas fa-code"></i></div><h3 class="text-white">{{ category.name }}</h3></div>
+                    {% elif 'advanced' in category.slug %}
+                    <div class="path-card-header odoo-advanced"><span class="level-badge">متقدم</span><div class="path-icon"><i class="fas fa-rocket"></i></div><h3 class="text-white">{{ category.name }}</h3></div>
+                    {% else %}
+                    <div class="path-card-header odoo-projects"><span class="level-badge">تطبيقي</span><div class="path-icon"><i class="fas fa-tasks"></i></div><h3 class="text-white">{{ category.name }}</h3></div>
+                    {% endif %}
+                    <div class="path-card-body">
+                        <p class="text-muted small">{{ category.description }}</p>
+                        <div class="path-stats"><div class="path-stat"><div class="path-stat-value">{{ category.article_count }}</div><div class="path-stat-label">درس</div></div><div class="path-stat"><div class="path-stat-value">{{ category.article_count|add:2 }}</div><div class="path-stat-label">ساعة</div></div><div class="path-stat"><div class="path-stat-value">0</div><div class="path-stat-label">مشروع</div></div></div>
+                        <ul class="path-topics">
+                            {% if 'basics' in category.slug %}
+                            <li><i class="fas fa-check-circle"></i> تثبيت وإعداد Odoo</li><li><i class="fas fa-check-circle"></i> واجهة المستخدم</li><li><i class="fas fa-check-circle"></i> النماذج الأساسية</li><li><i class="fas fa-check-circle"></i> إدارة التطبيقات</li>
+                            {% elif 'development' in category.slug %}
+                            <li><i class="fas fa-check-circle"></i> إنشاء الوحدات</li><li><i class="fas fa-check-circle"></i> النماذج والعروض</li><li><i class="fas fa-check-circle"></i> الصلاحيات والأمان</li><li><i class="fas fa-check-circle"></i> الترجمة والـ Wizards</li>
+                            {% elif 'advanced' in category.slug %}
+                            <li><i class="fas fa-check-circle"></i> الوراثة والتوسيع</li><li><i class="fas fa-check-circle"></i> التقارير QWeb</li><li><i class="fas fa-check-circle"></i> API والتكامل</li><li><i class="fas fa-check-circle"></i> تحسين الأداء</li>
+                            {% else %}
+                            <li><i class="fas fa-check-circle"></i> نظام إدارة مهام</li><li><i class="fas fa-check-circle"></i> نظام مخزون</li><li><i class="fas fa-check-circle"></i> نظام CRM</li><li><i class="fas fa-check-circle"></i> نظام HR</li>
+                            {% endif %}
+                        </ul>
+                        <a href="{{ category.get_absolute_url }}" class="btn btn-primary btn-lg w-100 mt-auto" style="background: linear-gradient(135deg, #875A7B, #a24089); border: none;"><i class="fas fa-play-circle"></i> ابدأ هذا المسار</a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5"><h2 class="display-5 fw-bold mb-3">كيف تتعلم Odoo؟</h2><p class="lead text-muted">خطوات بسيطة لبدء رحلتك مع Odoo</p></div>
+        <div class="row g-4">
+            <div class="col-md-3"><div class="step-card"><div class="step-number">1</div><h5>ثبت Odoo</h5><p class="text-muted">ثبت Odoo على جهازك وابدأ الاستكشاف</p><div class="step-connector d-none d-md-block"></div></div></div>
+            <div class="col-md-3"><div class="step-card"><div class="step-number">2</div><h5>ادرس الأساسيات</h5><p class="text-muted">تعلم هيكل النظام والنماذج الأساسية</p><div class="step-connector d-none d-md-block"></div></div></div>
+            <div class="col-md-3"><div class="step-card"><div class="step-number">3</div><h5>طور وحداتك</h5><p class="text-muted">أنشئ وحدات مخصصة لشركتك</p><div class="step-connector d-none d-md-block"></div></div></div>
+            <div class="col-md-3"><div class="step-card"><div class="step-number">4</div><h5>ابن مشاريع</h5><p class="text-muted">طبق معرفتك في مشاريع حقيقية</p></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5"><h2 class="display-5 fw-bold mb-3">أسئلة شائعة</h2></div>
+        <div class="row justify-content-center"><div class="col-lg-8">
+            <div class="accordion" id="faqOdoo">
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded-3"><h2 class="accordion-header"><button class="accordion-button collapsed rounded-3" data-bs-toggle="collapse" data-bs-target="#f1">هل Odoo مجاني؟</button></h2><div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqOdoo"><div class="accordion-body">نعم! Odoo Community Edition مجاني بالكامل ومفتوح المصدر. يحتوي على جميع الوظائف الأساسية لإدارة الشركات.</div></div></div>
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded-3"><h2 class="accordion-header"><button class="accordion-button collapsed rounded-3" data-bs-toggle="collapse" data-bs-target="#f2">هل أحتاج خبرة في Python؟</button></h2><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqOdoo"><div class="accordion-body">المعرفة الأساسية بـ Python مفيدة لكن ليست ضرورية للبدء. نوفر دروس Python الأساسية ضمن مسار Odoo Basics.</div></div></div>
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded-3"><h2 class="accordion-header"><button class="accordion-button collapsed rounded-3" data-bs-toggle="collapse" data-bs-target="#f3">ما هي فرص العمل في Odoo؟</button></h2><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqOdoo"><div class="accordion-body">الطلب على مطوري Odoo في ازدياد مستمر في الوطن العربي. الرواتب تبدأ من 5000 إلى 20000 ريال حسب الخبرة.</div></div></div>
+            </div>
+        </div></div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="card-body p-5 text-center" style="background: linear-gradient(135deg, #875A7B 0%, #a24089 100%);">
+                <h2 class="text-white display-6 mb-3">جاهز لتصبح مطور Odoo؟</h2>
+                <p class="text-white opacity-90 mb-4">اختر مسارك وابدأ رحلتك في عالم Odoo ERP</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{% url 'blog:category' slug='odoo-basics' %}" class="btn btn-light btn-lg px-4">
+                        <i class="fas fa-database"></i> ابدأ من الأساسيات
+                    </a>
+                    <a href="{% url 'blog:article_list' %}" class="btn btn-outline-light btn-lg px-4">
+                        <i class="fas fa-book"></i> تصفح كل الدروس
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+    const o=new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.1});
+    document.querySelectorAll('.path-card').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(30px)';el.style.transition='all 0.6s ease';o.observe(el)});
+});
+</script>
+{% endblock %}

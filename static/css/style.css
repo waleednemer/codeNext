@@ -1,0 +1,196 @@
+/* ========== CodeNext Custom Styles ========== */
+:root {
+    --primary: #0d6efd;
+    --secondary: #6f42c1;
+    --dark: #212529;
+    /* Python Colors */
+    --py-basics-start: #667eea;
+    --py-basics-end: #764ba2;
+    --py-oop-start: #f093fb;
+    --py-oop-end: #f5576c;
+    --py-adv-start: #4facfe;
+    --py-adv-end: #00f2fe;
+    --py-proj-start: #f6d365;
+    --py-proj-end: #fda085;
+    /* Odoo Colors */
+    --od-basics-start: #875A7B;
+    --od-basics-end: #a24089;
+    --od-dev-start: #5c3a5c;
+    --od-dev-end: #875A7B;
+    --od-adv-start: #3a1a3a;
+    --od-adv-end: #5c3a5c;
+    --od-proj-start: #1a0a1a;
+    --od-proj-end: #3a1a3a;
+}
+
+* {
+    font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.8;
+    background: #f8f9fa;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-brand {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* ========== Cards ========== */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-body .mt-auto {
+    margin-top: auto !important;
+}
+
+/* Row Equal Height */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========== Category Card Placeholders ========== */
+.card-placeholder {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+
+/* Python Colors */
+.card-placeholder.py-basics { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.card-placeholder.py-oop { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.card-placeholder.py-advanced { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.card-placeholder.py-projects { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+
+/* Odoo Colors */
+.card-placeholder.odoo-basics { background: linear-gradient(135deg, #875A7B 0%, #a24089 100%); }
+.card-placeholder.odoo-development { background: linear-gradient(135deg, #5c3a5c 0%, #875A7B 100%); }
+.card-placeholder.odoo-advanced { background: linear-gradient(135deg, #3a1a3a 0%, #5c3a5c 100%); }
+.card-placeholder.odoo-projects { background: linear-gradient(135deg, #1a0a1a 0%, #3a1a3a 100%); }
+
+/* ========== Badge Colors ========== */
+.badge-py-basics { background: rgba(102, 126, 234, 0.85) !important; color: white !important; }
+.badge-py-oop { background: rgba(245, 87, 108, 0.85) !important; color: white !important; }
+.badge-py-advanced { background: rgba(0, 200, 250, 0.75) !important; color: #333 !important; }
+.badge-py-projects { background: rgba(253, 160, 133, 0.85) !important; color: #333 !important; }
+.badge-odoo-basics { background: rgba(135, 90, 123, 0.85) !important; color: white !important; }
+.badge-odoo-development { background: rgba(92, 58, 92, 0.85) !important; color: white !important; }
+.badge-odoo-advanced { background: rgba(58, 26, 58, 0.85) !important; color: white !important; }
+.badge-odoo-projects { background: rgba(26, 10, 26, 0.85) !important; color: white !important; }
+
+/* ========== Lesson Number Colors ========== */
+.lesson-number.py-basics { background: linear-gradient(135deg, #667eea, #764ba2); }
+.lesson-number.py-oop { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.lesson-number.py-advanced { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.lesson-number.py-projects { background: linear-gradient(135deg, #f6d365, #fda085); }
+.lesson-number.odoo-basics { background: linear-gradient(135deg, #875A7B, #a24089); }
+.lesson-number.odoo-development { background: linear-gradient(135deg, #5c3a5c, #875A7B); }
+.lesson-number.odoo-advanced { background: linear-gradient(135deg, #3a1a3a, #5c3a5c); }
+.lesson-number.odoo-projects { background: linear-gradient(135deg, #1a0a1a, #3a1a3a); }
+
+/* ========== Links ========== */
+a {
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* ========== Code blocks ========== */
+pre {
+    border-radius: 12px !important;
+    direction: ltr;
+    text-align: left;
+}
+code {
+    font-family: 'Courier New', monospace !important;
+}
+
+/* ========== Buttons ========== */
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ========== Footer ========== */
+footer {
+    font-family: 'Tajawal', sans-serif;
+}
+footer a {
+    color: rgba(255,255,255,0.8);
+    transition: color 0.2s;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ========== Scrollbar ========== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #0d6efd, #6f42c1);
+    border-radius: 10px;
+}
+
+/* ========== Selection ========== */
+::selection {
+    background: rgba(13, 110, 253, 0.2);
+    color: #333;
+}
+
+/* ========== Animations ========== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease;
+}
+
+/* ========== Helper Classes ========== */
+.h-100 { height: 100%; }
+.w-100 { width: 100%; }
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-grow-1 { flex-grow: 1; }

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}شروط الاستخدام - CodeNext{% endblock %}
+
+{% block meta %}
+<meta name="description" content="شروط استخدام موقع CodeNext - القواعد والأحكام لاستخدام المنصة التعليمية">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ request.build_absolute_uri }}">
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .terms-hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 80px 0 100px; position: relative; overflow: hidden; }
+    .terms-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(255,193,7,0.12), transparent 70%); border-radius: 50%; }
+    .terms-hero::after { content: ''; position: absolute; bottom: -20%; left: -5%; width: 350px; height: 350px; background: radial-gradient(circle, rgba(13,110,253,0.1), transparent 70%); border-radius: 50%; }
+    .terms-hero-content { position: relative; z-index: 2; }
+    
+    .contract-icon { width: 90px; height: 90px; background: linear-gradient(135deg, rgba(255,193,7,0.15), rgba(255,152,0,0.15)); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #ffc107; margin: 0 auto 1.5rem; border: 1px solid rgba(255,193,7,0.3); animation: contractPulse 3s ease-in-out infinite; }
+    @keyframes contractPulse { 0%,100%{box-shadow:0 0 20px rgba(255,193,7,0.2)} 50%{box-shadow:0 0 40px rgba(255,193,7,0.4)} }
+    
+    .terms-card { background: white; border-radius: 24px; padding: 3rem; box-shadow: 0 20px 60px rgba(0,0,0,0.1); margin-top: -50px; position: relative; z-index: 10; border: 1px solid #f0f0f0; }
+    
+    .update-badge { background: linear-gradient(135deg, #fffdf0, #fff8e1); border: 1px solid #ffe082; border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.8rem; font-size: 0.9rem; color: #555; }
+    .update-badge .dot { width: 10px; height: 10px; background: #ffc107; border-radius: 50%; animation: glowPulse 2s ease-in-out infinite; }
+    @keyframes glowPulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    
+    .terms-card h2 { font-size: 1.6rem; font-weight: 700; color: #1a1a2e; margin-top: 3rem; margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 2px solid #f0f0f0; display: flex; align-items: center; gap: 0.8rem; }
+    .terms-card h2:first-of-type { margin-top: 0; }
+    .terms-card h2 .num { background: linear-gradient(135deg, #ffc107, #ff9800); color: #333; width: 35px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; flex-shrink: 0; }
+    .terms-card h3 { font-size: 1.15rem; font-weight: 600; color: #333; margin-top: 1.5rem; }
+    .terms-card p { font-size: 1rem; line-height: 1.9; color: #555; margin-bottom: 1rem; }
+    .terms-card ul { margin-bottom: 1.5rem; padding-right: 1.5rem; }
+    .terms-card li { margin-bottom: 0.5rem; font-size: 1rem; color: #555; line-height: 1.8; }
+    
+    .allowed-box { background: linear-gradient(135deg, #f0fff4, #e6ffe6); border-right: 4px solid #28a745; padding: 1.2rem 1.5rem; border-radius: 0 12px 12px 0; margin: 1rem 0; }
+    .not-allowed-box { background: linear-gradient(135deg, #fff5f5, #ffe0e0); border-right: 4px solid #dc3545; padding: 1.2rem 1.5rem; border-radius: 0 12px 12px 0; margin: 1rem 0; }
+    .warn-box { background: linear-gradient(135deg, #fffdf0, #fff8e1); border-right: 4px solid #ffc107; padding: 1.2rem 1.5rem; border-radius: 0 12px 12px 0; margin: 1.5rem 0; }
+    
+    .terms-card a { color: #0d6efd; text-decoration: underline; }
+    
+    @media (max-width: 768px) { .terms-card { padding: 1.5rem; } .terms-hero { padding: 60px 0 80px; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="terms-hero">
+    <div class="container terms-hero-content text-center text-white">
+        <div class="contract-icon"><i class="fas fa-file-contract"></i></div>
+        <h1 class="display-4 fw-bold mb-3">شروط الاستخدام</h1>
+        <p class="lead opacity-75">يرجى قراءة الشروط بعناية قبل استخدام المنصة 📋</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container"><div class="row justify-content-center"><div class="col-lg-9">
+        <div class="terms-card">
+            <div class="update-badge"><span class="dot"></span> آخر تحديث: <strong>يوليو 2026</strong> | الإصدار <strong>2.0</strong></div>
+            
+            <p>مرحباً بك في <strong>CodeNext</strong>. باستخدامك للموقع، فأنت توافق على الالتزام بهذه الشروط.</p>
+            
+            <div class="warn-box"><strong>⚠️ تنبيه:</strong> الشروط قابلة للتحديث. استمرارك في الاستخدام يعني موافقتك على التعديلات.</div>
+            
+            <h2 id="t1"><span class="num">1</span> قبول الشروط</h2>
+            <p>باستخدامك للموقع، تقر بأنك قرأت وفهمت ووافقت على هذه الشروط.</p>
+            
+            <h2 id="t2"><span class="num">2</span> وصف الخدمة</h2>
+            <p>CodeNext منصة تعليمية عربية تقدم محتوى مجاني في البرمجة وتقنية المعلومات - Python و Odoo.</p>
+            
+            <h2 id="t3"><span class="num">3</span> حقوق الملكية الفكرية</h2>
+            <p>جميع المقالات والدروس والأكواد البرمجية ملكية فكرية لـ CodeNext.</p>
+            <div class="allowed-box"><strong>✅ يسمح:</strong> التعلم الشخصي، مشاركة الروابط، استخدام الأكواد في مشاريعك، الاقتباس مع ذكر المصدر.</div>
+            <div class="not-allowed-box"><strong>❌ لا يسمح:</strong> نسخ المحتوى دون إذن، الاستخدام التجاري دون موافقة، تعديل المحتوى وإعادة توزيعه.</div>
+            
+            <h2 id="t4"><span class="num">4</span> استخدام الموقع</h2>
+            <ul><li>عدم الاستخدام غير القانوني</li><li>عدم اختراق الموقع</li><li>عدم نشر محتوى ضار</li><li>عدم استخدام برامج آلية لجمع البيانات</li></ul>
+            
+            <h2 id="t5"><span class="num">5</span> إخلاء المسؤولية</h2>
+            <p>نحرص على الدقة لكن لا نضمن اكتمال المحتوى 100%. استخدامك للمعلومات على مسؤوليتك.</p>
+            
+            <h2 id="t6"><span class="num">6</span> الإعلانات</h2>
+            <p>قد نستخدم Google AdSense لعرض إعلانات.</p>
+            
+            <h2 id="t7"><span class="num">7</span> حدود المسؤولية</h2>
+            <p>CodeNext غير مسؤولة عن أضرار ناتجة عن استخدام الموقع.</p>
+            
+            <h2 id="t8"><span class="num">8</span> الاتصال بنا</h2>
+            <ul><li><a href="{% url 'contact:contact' %}">صفحة اتصل بنا</a></li><li>alwaleed.nasr.dev@gmail.com</li></ul>
+            
+            <div class="text-center mt-5 pt-4 border-top">
+                <p class="text-muted"><i class="fas fa-check-circle text-success"></i> باستخدامك للموقع، أنت توافق على هذه الشروط.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="{% url 'core:home' %}" class="btn btn-primary"><i class="fas fa-home"></i> الرئيسية</a>
+                    <a href="{% url 'core:privacy' %}" class="btn btn-outline-primary"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </div></div></div>
+</section>
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}CodeNext - تعلم Python و Odoo من الصفر إلى الاحتراف{% endblock %}
+
+{% block meta %}
+<meta name="description" content="منصة CodeNext - تعلم Python و Odoo بالعربية من الصفر للاحتراف">
+<meta property="og:title" content="CodeNext - تعلم Python و Odoo">
+<meta property="og:description" content="دروس عملية منظمة لتعلم Python و Odoo خطوة بخطوة">
+<meta property="og:type" content="website"><meta property="og:url" content="{{ request.build_absolute_uri }}">
+<meta name="twitter:card" content="summary_large_image">
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .hero-section { background: linear-gradient(135deg, #0d6efd 0%, #6f42c1 50%, #d63384 100%); position: relative; overflow: hidden; padding: 80px 0; }
+    .hero-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .hero-content { position: relative; z-index: 2; }
+    .hero-title { font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; }
+    .hero-subtitle { font-size: 1.3rem; opacity: 0.95; margin-bottom: 2rem; }
+    .hero-stats { display: flex; justify-content: center; gap: 3rem; margin-top: 2rem; }
+    .stat-item { text-align: center; } .stat-number { font-size: 2.5rem; font-weight: 800; } .stat-label { font-size: 0.9rem; opacity: 0.8; }
+    
+    /* Python Logo Animation */
+    .python-logo-hero { position: absolute; right: 5%; top: 50%; transform: translateY(-50%); opacity: 0.08; font-size: 25rem; color: white; animation: floatPython 6s ease-in-out infinite; z-index: 1; }
+    @keyframes floatPython { 0%,100%{transform:translateY(-50%) rotate(0)} 50%{transform:translateY(-55%) rotate(5deg)} }
+    
+    .code-animation { position: absolute; left: 10%; top: 20%; opacity: 0.1; font-family: 'Courier New', monospace; font-size: 1.2rem; direction: ltr; animation: float 6s ease-in-out infinite; }
+    
+    .section-title { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; display: inline-block; position: relative; }
+    .section-title::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; border-radius: 2px; }
+    .section-subtitle { color: #6c757d; font-size: 1.1rem; margin-bottom: 3rem; }
+    
+    .category-card { border: none; border-radius: 24px; overflow: hidden; transition: all 0.4s; background: white; box-shadow: 0 10px 40px rgba(0,0,0,0.08); height: 100%; display: flex; flex-direction: column; }
+    .category-card:hover { transform: translateY(-12px); box-shadow: 0 25px 60px rgba(0,0,0,0.15); }
+    .category-card-header { padding: 30px 20px 15px; text-align: center; position: relative; }
+    .category-card-header .icon-circle { width: 60px; height: 60px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; margin: 0 auto 1rem; border: 2px solid rgba(255,255,255,0.3); }
+    .category-card-body { padding: 20px 25px; flex: 1; display: flex; flex-direction: column; }
+    .category-card-body h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .category-card-body .desc { font-size: 0.85rem; color: #777; margin-bottom: 1rem; }
+    .category-stats { display: flex; justify-content: space-around; padding: 15px 0; border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0; margin-bottom: 1rem; }
+    .category-stat { text-align: center; } .category-stat-value { font-size: 1.5rem; font-weight: 700; } .category-stat-label { font-size: 0.75rem; color: #888; }
+    .category-features { list-style: none; padding: 0; margin: 0 0 1rem; font-size: 0.85rem; }
+    .category-features li { padding: 4px 0; color: #666; } .category-features li i { color: #28a745; margin-left: 6px; font-size: 0.7rem; }
+    .level-badge { position: absolute; top: 12px; left: 12px; padding: 4px 12px; border-radius: 15px; font-size: 0.7rem; font-weight: 600; background: rgba(255,255,255,0.25); color: white; }
+    
+    .category-card-header.py-basics { background: linear-gradient(135deg, #667eea, #764ba2); }
+    .category-card-header.py-oop { background: linear-gradient(135deg, #f093fb, #f5576c); }
+    .category-card-header.py-advanced { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+    .category-card-header.py-projects { background: linear-gradient(135deg, #f6d365, #fda085); }
+    .category-card-header.odoo-basics { background: linear-gradient(135deg, #6C3483, #A569BD); }
+    .category-card-header.odoo-development { background: linear-gradient(135deg, #1a5276, #2980b9); }
+    .category-card-header.odoo-advanced { background: linear-gradient(135deg, #922B21, #E74C3C); }
+    .category-card-header.odoo-projects { background: linear-gradient(135deg, #0E6251, #1ABC9C); }
+    .btn.py-basics { background: linear-gradient(135deg, #667eea, #764ba2)!important; border: none!important; color: white!important; }
+    .btn.py-oop { background: linear-gradient(135deg, #f093fb, #f5576c)!important; border: none!important; color: white!important; }
+    .btn.py-advanced { background: linear-gradient(135deg, #4facfe, #00f2fe)!important; border: none!important; color: #333!important; }
+    .btn.py-projects { background: linear-gradient(135deg, #f6d365, #fda085)!important; border: none!important; color: #333!important; }
+    .btn.odoo-basics { background: linear-gradient(135deg, #6C3483, #A569BD)!important; border: none!important; color: white!important; }
+    .btn.odoo-development { background: linear-gradient(135deg, #1a5276, #2980b9)!important; border: none!important; color: white!important; }
+    .btn.odoo-advanced { background: linear-gradient(135deg, #922B21, #E74C3C)!important; border: none!important; color: white!important; }
+    .btn.odoo-projects { background: linear-gradient(135deg, #0E6251, #1ABC9C)!important; border: none!important; color: white!important; }
+    
+    .article-card { border: none; border-radius: 15px; transition: all 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.08); background: white; height: 100%; display: flex; flex-direction: column; }
+    .article-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
+    .article-card .card-body { flex: 1; } .article-card .card-img-top { height: 200px; object-fit: cover; }
+    .article-meta { font-size: 0.85rem; color: #6c757d; } .article-meta span { margin-left: 1rem; }
+    .cta-section { background: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%); border-radius: 20px; padding: 4rem 2rem; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
+    @media (max-width: 768px) { .hero-title { font-size: 2.5rem; } .hero-stats { flex-direction: column; gap: 1.5rem; } .section-title { font-size: 2rem; } .python-logo-hero { font-size: 15rem; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <!-- شعار Python كبير شفاف -->
+    <div class="python-logo-hero">🐍</div>
+    <div class="code-animation"><pre>def learn():\n    print("Hello, World!")\n    return "Success! 🚀"</pre></div>
+    
+    <div class="container"><div class="row align-items-center">
+        <div class="col-lg-7 hero-content text-white">
+            <div class="mb-3"><span class="badge bg-light text-primary px-3 py-2"><i class="fas fa-star text-warning"></i> منصة تعليمية عربية متخصصة</span></div>
+            <h1 class="hero-title">تعلم Python و Odoo<br><span style="background:linear-gradient(to left,#ffd700,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">من الصفر إلى الاحتراف</span></h1>
+            <p class="hero-subtitle">دروس عملية منظمة مع أمثلة وتمارين تفاعلية</p>
+            <div class="d-flex flex-wrap gap-3">
+                <a href="{% url 'core:python' %}" class="btn btn-light btn-lg px-4 py-3 shadow"><i class="fab fa-python"></i> ابدأ تعلم Python</a>
+                <a href="{% url 'core:odoo' %}" class="btn btn-outline-light btn-lg px-4 py-3"><i class="fas fa-cubes"></i> ابدأ تعلم Odoo</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-number" id="counter-courses">0</span><span class="stat-label">درس تعليمي</span></div>
+                <div class="stat-item"><span class="stat-number" id="counter-paths">0</span><span class="stat-label">مسار تعلم</span></div>
+                <div class="stat-item"><span class="stat-number" id="counter-students">0</span><span class="stat-label">متعلّم</span></div>
+            </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block"><img src="{% static 'images/python-hero.svg' %}" alt="تعلم" class="img-fluid"></div>
+    </div></div>
+</section>
+
+<section class="py-5 bg-light"><div class="container"><div class="row g-4">
+    <div class="col-md-4"><div class="text-center p-4"><div class="display-4 text-primary mb-3"><i class="fas fa-chalkboard-teacher"></i></div><h5>تعليم منهجي</h5><p class="text-muted">محتوى منظم ومتدرج</p></div></div>
+    <div class="col-md-4"><div class="text-center p-4"><div class="display-4 text-primary mb-3"><i class="fas fa-language"></i></div><h5>محتوى عربي 100%</h5><p class="text-muted">شرح كامل بالعربية</p></div></div>
+    <div class="col-md-4"><div class="text-center p-4"><div class="display-4 text-primary mb-3"><i class="fas fa-laptop-code"></i></div><h5>تطبيق عملي</h5><p class="text-muted">أكواد جاهزة للتطبيق</p></div></div>
+</div></div></section>
+
+<section class="py-5"><div class="container">
+    <div class="text-center mb-5"><h2 class="section-title">مسارات التعلم</h2><p class="section-subtitle">اختر المسار المناسب لمستواك</p></div>
+    <div class="row g-4 justify-content-center">
+        {% for category in categories %}
+        <div class="col-lg-3 col-md-6 d-flex">
+            <div class="card category-card h-100 w-100">
+                <div class="category-card-header {% if 'odoo-basics' in category.slug %}odoo-basics{% elif 'odoo-development' in category.slug %}odoo-development{% elif 'odoo-advanced' in category.slug %}odoo-advanced{% elif 'odoo-projects' in category.slug %}odoo-projects{% elif 'python-basics' in category.slug %}py-basics{% elif 'python-oop' in category.slug %}py-oop{% elif 'python-advanced' in category.slug %}py-advanced{% else %}py-projects{% endif %}">
+                    <span class="level-badge">{% if 'basics' in category.slug %}مبتدئ{% elif 'oop' in category.slug or 'development' in category.slug %}متوسط{% else %}متقدم{% endif %}</span>
+                    <div class="icon-circle">{% if 'python' in category.slug %}🐍{% else %}📦{% endif %}</div>
+                    <h3 class="text-white mb-0">{{ category.name }}</h3>
+                </div>
+                <div class="category-card-body text-center">
+                    <p class="desc">{{ category.description|truncatewords:10 }}</p>
+                    <div class="category-stats"><div class="category-stat"><div class="category-stat-value">{{ category.article_count }}</div><div class="category-stat-label">درس</div></div><div class="category-stat"><div class="category-stat-value">{{ category.article_count|add:2 }}</div><div class="category-stat-label">ساعة</div></div></div>
+                    <ul class="category-features text-start"><li><i class="fas fa-check-circle"></i> دروس تفاعلية</li><li><i class="fas fa-check-circle"></i> أمثلة عملية</li></ul>
+                    <a href="{{ category.get_absolute_url }}" class="btn btn-sm w-100 mt-auto {% if 'odoo-basics' in category.slug %}odoo-basics{% elif 'odoo-development' in category.slug %}odoo-development{% elif 'odoo-advanced' in category.slug %}odoo-advanced{% elif 'odoo-projects' in category.slug %}odoo-projects{% elif 'python-basics' in category.slug %}py-basics{% elif 'python-oop' in category.slug %}py-oop{% elif 'python-advanced' in category.slug %}py-advanced{% else %}py-projects{% endif %}">ابدأ التعلم <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div></section>
+
+<section class="py-5 bg-light"><div class="container"><div class="d-flex justify-content-between align-items-center mb-5"><h2 class="section-title">أحدث الدروس</h2><a href="{% url 'blog:article_list' %}" class="btn btn-outline-primary">عرض الكل</a></div><div class="row g-4">
+    {% for article in latest_articles %}<div class="col-lg-4 col-md-6 d-flex"><article class="card article-card h-100 w-100">{% if article.featured_image %}<img src="{{ article.featured_image.url }}" class="card-img-top" alt="{{ article.title }}">{% endif %}<div class="card-body d-flex flex-column"><h5 class="card-title">{% if article.slug %}<a href="{% url 'blog:article_detail' article.slug %}" class="text-dark text-decoration-none">{{ article.title }}</a>{% else %}{{ article.title }}{% endif %}</h5><p class="card-text text-muted small flex-grow-1">{{ article.excerpt|truncatewords:20 }}</p><div class="article-meta mt-2"><span><i class="far fa-calendar-alt"></i> {{ article.created_at|date:"j F Y" }}</span><span><i class="far fa-eye"></i> {{ article.views }}</span><span><i class="far fa-clock"></i> {{ article.reading_time }}</span></div>{% if article.slug %}<a href="{% url 'blog:article_detail' article.slug %}" class="btn btn-outline-primary btn-sm mt-2">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>{% endif %}</div></article></div>{% empty %}<div class="col-12 text-center py-5"><h4>لا توجد دروس</h4></div>{% endfor %}
+</div></div></section>
+
+<section class="py-5"><div class="container"><div class="cta-section text-center text-white"><h2 class="display-6 mb-4">هل أنت مستعد لبدء رحلتك؟</h2><p class="lead mb-4">انضم إلينا وابدأ في بناء مستقبلك المهني اليوم</p><div class="d-flex justify-content-center gap-3 flex-wrap"><a href="{% url 'core:python' %}" class="btn btn-light btn-lg px-4 shadow"><i class="fab fa-python"></i> تعلم Python</a><a href="{% url 'core:odoo' %}" class="btn btn-outline-light btn-lg px-4"><i class="fas fa-cubes"></i> تعلم Odoo</a></div></div></div></section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function animateCounter(el,target,duration){let s=0;const i=target/(duration/16);function u(){s+=i;if(s<target){el.textContent=Math.floor(s);requestAnimationFrame(u)}else{el.textContent=target}}u()}
+const obs=new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.1});
+document.querySelectorAll('.category-card,.article-card').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(30px)';el.style.transition='all 0.6s ease';obs.observe(el)});
+const statsObs=new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting){animateCounter(document.getElementById('counter-courses'),110,2000);animateCounter(document.getElementById('counter-paths'),8,2000);animateCounter(document.getElementById('counter-students'),15000,2000);statsObs.unobserve(e.target)}})});
+const hs=document.querySelector('.hero-stats');if(hs)statsObs.observe(hs);
+</script>
+{% endblock %}

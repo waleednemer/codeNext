@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}سياسة الخصوصية - CodeNext{% endblock %}
+
+{% block meta %}
+<meta name="description" content="سياسة الخصوصية لموقع CodeNext - كيف نحمي بياناتك وخصوصيتك">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ request.build_absolute_uri }}">
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .privacy-hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 80px 0 100px; position: relative; overflow: hidden; }
+    .privacy-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(13,110,253,0.15), transparent 70%); border-radius: 50%; }
+    .privacy-hero::after { content: ''; position: absolute; bottom: -20%; left: -5%; width: 350px; height: 350px; background: radial-gradient(circle, rgba(111,66,193,0.12), transparent 70%); border-radius: 50%; }
+    .privacy-hero-content { position: relative; z-index: 2; }
+    
+    .shield-icon { width: 90px; height: 90px; background: linear-gradient(135deg, rgba(13,110,253,0.2), rgba(111,66,193,0.2)); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #0d6efd; margin: 0 auto 1.5rem; border: 1px solid rgba(13,110,253,0.3); animation: shieldPulse 3s ease-in-out infinite; }
+    @keyframes shieldPulse { 0%,100%{box-shadow:0 0 20px rgba(13,110,253,0.2)} 50%{box-shadow:0 0 40px rgba(13,110,253,0.4)} }
+    
+    .privacy-card { background: white; border-radius: 24px; padding: 3rem; box-shadow: 0 20px 60px rgba(0,0,0,0.1); margin-top: -50px; position: relative; z-index: 10; border: 1px solid #f0f0f0; }
+    
+    .update-badge { background: linear-gradient(135deg, #f0f7ff, #f8f0ff); border: 1px solid #e0e7ff; border-radius: 12px; padding: 1rem 1.5rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.8rem; font-size: 0.9rem; color: #555; }
+    .update-badge .dot { width: 10px; height: 10px; background: #28a745; border-radius: 50%; animation: glowPulse 2s ease-in-out infinite; }
+    @keyframes glowPulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    
+    .toc { background: #fafafa; border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2.5rem; border: 1px solid #f0f0f0; }
+    .toc h4 { font-weight: 700; margin-bottom: 1rem; color: #333; }
+    .toc ol { padding-right: 1.2rem; margin: 0; columns: 2; column-gap: 2rem; }
+    .toc li { padding: 0.3rem 0; break-inside: avoid; }
+    .toc a { color: #555; text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+    .toc a:hover { color: #0d6efd; padding-right: 5px; }
+    .toc a i { font-size: 0.6rem; color: #0d6efd; margin-left: 5px; }
+    
+    .privacy-card h2 { font-size: 1.6rem; font-weight: 700; color: #1a1a2e; margin-top: 3rem; margin-bottom: 1rem; padding-bottom: 0.8rem; border-bottom: 2px solid #f0f0f0; display: flex; align-items: center; gap: 0.8rem; }
+    .privacy-card h2:first-of-type { margin-top: 0; }
+    .privacy-card h2 .num { background: linear-gradient(135deg, #0d6efd, #6f42c1); color: white; width: 35px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
+    .privacy-card h3 { font-size: 1.15rem; font-weight: 600; color: #333; margin-top: 1.5rem; }
+    .privacy-card p { font-size: 1rem; line-height: 1.9; color: #555; margin-bottom: 1rem; }
+    .privacy-card ul { margin-bottom: 1.5rem; padding-right: 1.5rem; }
+    .privacy-card li { margin-bottom: 0.5rem; font-size: 1rem; color: #555; line-height: 1.8; }
+    
+    .highlight-box { background: linear-gradient(135deg, #f0f7ff, #f8f0ff); border-right: 4px solid #0d6efd; padding: 1.2rem 1.5rem; border-radius: 0 12px 12px 0; margin: 1.5rem 0; }
+    .highlight-box.success { border-right-color: #28a745; background: linear-gradient(135deg, #f0fff4, #e6ffe6); }
+    
+    .privacy-card a { color: #0d6efd; text-decoration: underline; }
+    
+    @media (max-width: 768px) { .privacy-card { padding: 1.5rem; } .toc ol { columns: 1; } .privacy-hero { padding: 60px 0 80px; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="privacy-hero">
+    <div class="container privacy-hero-content text-center text-white">
+        <div class="shield-icon"><i class="fas fa-shield-halved"></i></div>
+        <h1 class="display-4 fw-bold mb-3">سياسة الخصوصية</h1>
+        <p class="lead opacity-75">نحن نحمي بياناتك كما نحمي أكوادنا - بأعلى معايير الأمان 🔒</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container"><div class="row justify-content-center"><div class="col-lg-9">
+        <div class="privacy-card">
+            <div class="update-badge"><span class="dot"></span> آخر تحديث: <strong>يوليو 2026</strong> | الإصدار <strong>2.0</strong></div>
+            
+            <p>في <strong>CodeNext</strong>، نأخذ خصوصيتك على محمل الجد. هذه السياسة توضح كيفية جمعنا واستخدامنا وحمايتنا لمعلوماتك.</p>
+            
+            <div class="highlight-box success"><strong>🔒 ملخص سريع:</strong> لا نجمع معلومات حساسة. نستخدم فقط البيانات الضرورية لتحسين تجربتك.</div>
+            
+            <div class="toc">
+                <h4><i class="fas fa-list-ul"></i> جدول المحتويات</h4>
+                <ol>
+                    <li><a href="#s1"><i class="fas fa-chevron-left"></i> المعلومات التي نجمعها</a></li>
+                    <li><a href="#s2"><i class="fas fa-chevron-left"></i> كيفية استخدام المعلومات</a></li>
+                    <li><a href="#s3"><i class="fas fa-chevron-left"></i> ملفات تعريف الارتباط</a></li>
+                    <li><a href="#s4"><i class="fas fa-chevron-left"></i> خدمات الطرف الثالث</a></li>
+                    <li><a href="#s5"><i class="fas fa-chevron-left"></i> أمن المعلومات</a></li>
+                    <li><a href="#s6"><i class="fas fa-chevron-left"></i> حقوق المستخدم</a></li>
+                    <li><a href="#s7"><i class="fas fa-chevron-left"></i> خصوصية الأطفال</a></li>
+                    <li><a href="#s8"><i class="fas fa-chevron-left"></i> تغييرات السياسة</a></li>
+                    <li><a href="#s9"><i class="fas fa-chevron-left"></i> الاتصال بنا</a></li>
+                </ol>
+            </div>
+            
+            <h2 id="s1"><span class="num">1</span> المعلومات التي نجمعها</h2>
+            <h3>معلومات تقدمها طواعية</h3>
+            <ul><li><strong>نموذج الاتصال:</strong> الاسم، البريد الإلكتروني، ومحتوى الرسالة للرد على استفسارك فقط.</li></ul>
+            <h3>معلومات تجمع تلقائياً</h3>
+            <ul><li><strong>بيانات التصفح:</strong> عنوان IP، نوع المتصفح، الصفحات المزارة.</li><li><strong>Google Analytics:</strong> إحصائيات مجهولة المصدر.</li></ul>
+            <div class="highlight-box success">✅ <strong>لا نجمع:</strong> بطاقات ائتمان، كلمات مرور، معلومات مالية.</div>
+            
+            <h2 id="s2"><span class="num">2</span> كيفية استخدام المعلومات</h2>
+            <ul><li>تحسين المحتوى وتجربة المستخدم</li><li>الرد على استفساراتك</li><li>تحليل أداء الموقع</li><li>عرض إعلانات Google AdSense (مستقبلاً)</li></ul>
+            
+            <h2 id="s3"><span class="num">3</span> ملفات تعريف الارتباط (Cookies)</h2>
+            <p>نستخدم كوكيز لتحسين تجربتك. يمكنك تعطيلها من إعدادات المتصفح.</p>
+            <ul><li><strong>ضرورية:</strong> لعمل الموقع</li><li><strong>تحليلية:</strong> Google Analytics</li><li><strong>إعلانية:</strong> Google AdSense (مستقبلاً)</li></ul>
+            
+            <h2 id="s4"><span class="num">4</span> خدمات الطرف الثالث</h2>
+            <ul><li><strong>Google Analytics:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a></li></ul>
+            
+            <h2 id="s5"><span class="num">5</span> أمن المعلومات</h2>
+            <ul><li>تشفير SSL/TLS</li><li>حماية CSRF و XSS</li><li>تحديثات دورية</li></ul>
+            
+            <h2 id="s6"><span class="num">6</span> حقوق المستخدم</h2>
+            <ul><li><strong>الوصول:</strong> معرفة بياناتك</li><li><strong>التصحيح:</strong> تعديل البيانات</li><li><strong>الحذف:</strong> طلب حذف بياناتك</li></ul>
+            <p>للتواصل: <a href="{% url 'contact:contact' %}">اتصل بنا</a></p>
+            
+            <h2 id="s7"><span class="num">7</span> خصوصية الأطفال</h2>
+            <p>موقعنا غير موجه للأطفال دون 13 عاماً.</p>
+            
+            <h2 id="s8"><span class="num">8</span> تغييرات السياسة</h2>
+            <p>سننشر أي تحديثات على هذه الصفحة.</p>
+            
+            <h2 id="s9"><span class="num">9</span> الاتصال بنا</h2>
+            <ul><li>صفحة <a href="{% url 'contact:contact' %}">اتصل بنا</a></li><li>البريد: alwaleed.nasr.dev@gmail.com</li></ul>
+            
+            <div class="text-center mt-5 pt-4 border-top"><p class="text-muted">باستخدامك لـ CodeNext، فأنت توافق على هذه السياسة.</p><a href="{% url 'core:home' %}" class="btn btn-primary px-4"><i class="fas fa-home"></i> الرئيسية</a></div>
+        </div>
+    </div></div></div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>document.querySelectorAll('.toc a').forEach(l=>{l.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));t&&t.scrollIntoView({behavior:'smooth',block:'start'});});});</script>
+{% endblock %}

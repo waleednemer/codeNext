@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}اتصل بي - CodeNext{% endblock %}
+
+{% block meta %}
+<meta name="description" content="تواصل مع CodeNext لأي استفسارات حول Python و Odoo">
+<meta property="og:title" content="اتصل بي - CodeNext">
+<meta property="og:description" content="نحن هنا لمساعدتك في رحلتك لتعلم Python و Odoo">
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .contact-hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 80px 0 100px; position: relative; overflow: hidden; }
+    .contact-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(13,110,253,0.15), transparent 70%); border-radius: 50%; }
+    .contact-hero::after { content: ''; position: absolute; bottom: -20%; left: -5%; width: 350px; height: 350px; background: radial-gradient(circle, rgba(111,66,193,0.12), transparent 70%); border-radius: 50%; }
+    .contact-hero-content { position: relative; z-index: 2; }
+    
+    .msg-icon { width: 90px; height: 90px; background: linear-gradient(135deg, rgba(13,110,253,0.15), rgba(111,66,193,0.15)); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: #0d6efd; margin: 0 auto 1.5rem; border: 1px solid rgba(13,110,253,0.3); animation: msgPulse 3s ease-in-out infinite; }
+    @keyframes msgPulse { 0%,100%{box-shadow:0 0 20px rgba(13,110,253,0.2)} 50%{box-shadow:0 0 40px rgba(13,110,253,0.4)} }
+    
+    .contact-card { background: white; border-radius: 24px; padding: 3rem; box-shadow: 0 20px 60px rgba(0,0,0,0.1); margin-top: -50px; position: relative; z-index: 10; border: 1px solid #f0f0f0; }
+    
+    .form-control, .form-select { border: 2px solid #e9ecef; border-radius: 12px; padding: 0.9rem 1.2rem; font-size: 1rem; transition: all 0.3s; background: #fafafa; }
+    .form-control:focus, .form-select:focus { border-color: #0d6efd; box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.1); background: white; }
+    textarea.form-control { min-height: 140px; resize: vertical; }
+    
+    .submit-btn { background: linear-gradient(135deg, #0d6efd, #6f42c1); border: none; border-radius: 12px; padding: 1rem; font-size: 1.05rem; font-weight: 600; width: 100%; color: white; transition: all 0.3s; }
+    .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(13,110,253,0.3); }
+    
+    .info-card { border: none; border-radius: 16px; transition: all 0.3s; box-shadow: 0 5px 20px rgba(0,0,0,0.05); height: 100%; }
+    .info-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+    .info-icon { width: 55px; height: 55px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+    .icon-email { background: linear-gradient(135deg, #667eea, #764ba2); color: white; }
+    .icon-time { background: linear-gradient(135deg, #f093fb, #f5576c); color: white; }
+    
+    .social-btn-contact { width: 42px; height: 42px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem; transition: all 0.3s; }
+    .social-btn-contact:hover { transform: translateY(-3px); color: white; }
+    .s-github { background: #333; } .s-linkedin { background: #0077b5; }
+    
+    .faq-mini { background: #fafafa; border-radius: 16px; padding: 1.5rem; border: 1px solid #f0f0f0; }
+    .faq-mini .faq-item { padding: 0.8rem 0; border-bottom: 1px solid #eee; }
+    .faq-mini .faq-item:last-child { border-bottom: none; }
+    
+    .success-msg { display: none; text-align: center; padding: 2rem; }
+    .success-msg.show { display: block; animation: fadeInUp 0.5s ease; }
+    .success-msg .check-icon { width: 70px; height: 70px; background: linear-gradient(135deg, #28a745, #20c997); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1rem; }
+    
+    @keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+    @media (max-width: 768px) { .contact-card { padding: 1.5rem; } .contact-hero { padding: 60px 0 80px; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="contact-hero">
+    <div class="container contact-hero-content text-center text-white">
+        <div class="msg-icon"><i class="fas fa-paper-plane"></i></div>
+        <h1 class="display-4 fw-bold mb-3">اتصل بي</h1>
+        <p class="lead opacity-75">نحن هنا لمساعدتك في رحلتك لتعلم Python و Odoo 💬</p>
+        <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
+            <span class="badge bg-white bg-opacity-25 px-3 py-2"><i class="fas fa-check-circle text-success"></i> رد سريع</span>
+            <span class="badge bg-white bg-opacity-25 px-3 py-2"><i class="fas fa-check-circle text-success"></i> دعم فني</span>
+            <span class="badge bg-white bg-opacity-25 px-3 py-2"><i class="fas fa-check-circle text-success"></i> استفسارات مجانية</span>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container"><div class="row g-4">
+        <div class="col-lg-7">
+            <div class="contact-card">
+                {% if messages %}
+                <div class="success-msg show" id="successMessage">
+                    <div class="check-icon"><i class="fas fa-check"></i></div>
+                    <h3>تم إرسال رسالتك بنجاح!</h3>
+                    <p class="text-muted">سنقوم بالرد عليك في أقرب وقت.</p>
+                    <button class="btn btn-primary btn-sm" onclick="resetForm()"><i class="fas fa-plus"></i> رسالة جديدة</button>
+                </div>
+                {% endif %}
+                <form method="POST" id="contactForm" {% if messages %}style="display:none;"{% endif %}>
+                    {% csrf_token %}
+                    <h4 class="fw-bold mb-3">📝 أرسل رسالة</h4>
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="الاسم الكامل" required></div>
+                        <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني" required></div>
+                    </div>
+                    <select name="subject" class="form-select mb-3" required>
+                        <option value="" disabled selected>نوع الموضوع</option>
+                        <option value="استفسار عام">استفسار عام</option>
+                        <option value="مشكلة تقنية">مشكلة تقنية</option>
+                        <option value="اقتراح">اقتراح</option>
+                        <option value="تعاون">تعاون</option>
+                    </select>
+                    <textarea name="message" class="form-control mb-3" placeholder="اكتب رسالتك هنا..." required></textarea>
+                    <small class="text-muted d-block mb-3"><i class="fas fa-shield-alt"></i> معلوماتك آمنة ولن تتم مشاركتها</small>
+                    <button type="submit" class="submit-btn" id="submitBtn"><i class="fas fa-paper-plane"></i> إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="row g-3 mb-4">
+                <div class="col-12"><div class="info-card card p-3"><div class="d-flex align-items-start gap-3"><div class="info-icon icon-email"><i class="fas fa-envelope"></i></div><div><h6>البريد الإلكتروني</h6><p class="text-muted small mb-0">alwaleed.nasr.dev@gmail.com</p><small class="text-success"><i class="fas fa-circle"></i> الرد خلال 24 ساعة</small></div></div></div></div>
+                <div class="col-12"><div class="info-card card p-3"><div class="d-flex align-items-start gap-3"><div class="info-icon icon-time"><i class="fas fa-clock"></i></div><div><h6>ساعات العمل</h6><p class="text-muted small mb-0">السبت - الخميس | 9 ص - 6 م</p><small class="text-muted">بتوقيت مكة المكرمة</small></div></div></div></div>
+            </div>
+            <div class="card border-0 shadow-sm rounded-3 p-3 mb-3"><h6><i class="fas fa-share-alt"></i> تابعنا</h6><div class="d-flex gap-2"><a href="https://github.com/waleednemer" class="social-btn-contact s-github"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/alwaleednasraldin" class="social-btn-contact s-linkedin"><i class="fab fa-linkedin-in"></i></a></div></div>
+            <div class="faq-mini"><h6><i class="fas fa-question-circle"></i> أسئلة متكررة</h6><div class="faq-item"><strong>هل الدروس مجانية؟</strong><p class="text-muted small mb-0">نعم، جميعها مجانية.</p></div><div class="faq-item"><strong>كيف أبدأ؟</strong><p class="text-muted small mb-0">اختر مسار وابدأ من الدرس الأول.</p></div></div>
+        </div>
+    </div></div>
+</section>
+
+<section class="py-5 bg-light"><div class="container text-center"><h3 class="mb-4">هل تبحث عن شيء محدد؟</h3><div class="row g-3 justify-content-center">
+    <div class="col-md-3"><a href="{% url 'core:python' %}" class="btn w-100 py-3 rounded-3" style="background:linear-gradient(135deg,#667eea,#764ba2);color:white;"><i class="fab fa-python"></i> تعلم Python</a></div>
+    <div class="col-md-3"><a href="{% url 'core:odoo' %}" class="btn w-100 py-3 rounded-3" style="background:linear-gradient(135deg,#875A7B,#a24089);color:white;"><i class="fas fa-cubes"></i> تعلم Odoo</a></div>
+    <div class="col-md-3"><a href="{% url 'blog:article_list' %}" class="btn w-100 py-3 rounded-3" style="background:linear-gradient(135deg,#0d6efd,#6f42c1);color:white;"><i class="fas fa-book"></i> تصفح الدروس</a></div>
+    <div class="col-md-3"><a href="{% url 'search:search' %}" class="btn w-100 py-3 rounded-3" style="background:#333;color:white;"><i class="fas fa-search"></i> ابحث</a></div>
+</div></div></section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.getElementById('contactForm')?.addEventListener('submit',function(){const b=document.getElementById('submitBtn');b.classList.add('loading');b.disabled=true;});
+function resetForm(){const f=document.getElementById('contactForm'),s=document.getElementById('successMessage');if(f&&s){f.style.display='block';f.reset();s.classList.remove('show');}}
+</script>
+{% endblock %}

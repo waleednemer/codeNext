@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <linearGradient id="pyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#306998"/>
+      <stop offset="100%" style="stop-color:#FFD43B"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Python شعار -->
+  <g transform="translate(15, 10)">
+    <!-- Python logo simplified -->
+    <path d="M30,15 Q30,5 20,5 L15,5 Q5,5 5,15 L5,25 Q5,35 15,35 L25,35 L25,25 L25,15 L40,15 L40,25 L40,35 L35,35 L30,35 Q20,35 20,45 L20,50 Q20,60 30,60 L35,60 L45,60 Q55,60 55,50 L55,40 Q55,30 45,30 L35,30 L35,40 L55,40 L55,50 Q55,55 45,55 L35,55 Q30,55 30,50 L30,45 Q30,35 40,35 L45,35" 
+          fill="url(#pyGrad)" transform="scale(0.7) translate(10, 5)"/>
+  </g>
+  
+  <text x="100" y="48" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="#333">
+    Code<tspan fill="#306998">Next</tspan>
+  </text>
+  <text x="100" y="68" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    تعلم Python بالعربية
+  </text>
+</svg>

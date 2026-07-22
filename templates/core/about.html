@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}من أنا - CodeNext{% endblock %}
+
+{% block meta %}
+<meta name="description" content="تعرف على مطور CodeNext - مطور Odoo و Python متخصص في تعليم البرمجة للعالم العربي">
+<meta property="og:title" content="من أنا - CodeNext">
+<meta property="og:description" content="مطور شغوف بتعليم البرمجة للعالم العربي">
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .about-hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 80px 0 120px; position: relative; overflow: hidden; }
+    .about-hero::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(13,110,253,0.15), transparent 70%); border-radius: 50%; }
+    
+    .profile-card { background: white; border-radius: 24px; padding: 3rem; box-shadow: 0 20px 60px rgba(0,0,0,0.1); margin-top: -70px; position: relative; z-index: 10; }
+    .avatar { width: 130px; height: 130px; border-radius: 50%; background: linear-gradient(135deg, #0d6efd, #6f42c1); display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: white; margin: -100px auto 1.5rem; border: 6px solid white; box-shadow: 0 10px 30px rgba(13,110,253,0.3); }
+    .avatar::after { content: ''; position: absolute; bottom: 8px; right: 8px; width: 18px; height: 18px; background: #28a745; border-radius: 50%; border: 3px solid white; }
+    .avatar { position: relative; }
+    
+    .stat-card { text-align: center; padding: 1.5rem; border: none; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); height: 100%; transition: all 0.3s; }
+    .stat-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+    .stat-icon { width: 55px; height: 55px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin: 0 auto 0.8rem; color: white; }
+    .stat-value { font-size: 2rem; font-weight: 800; } .stat-label { color: #888; font-size: 0.85rem; }
+    
+    .skill-item { margin-bottom: 1.2rem; }
+    .skill-info { display: flex; justify-content: space-between; margin-bottom: 0.4rem; font-weight: 500; font-size: 0.9rem; }
+    .skill-bar { height: 8px; background: #e9ecef; border-radius: 8px; overflow: hidden; }
+    .skill-progress { height: 100%; border-radius: 8px; background: linear-gradient(90deg, #0d6efd, #6f42c1); width: 0; transition: width 1.5s ease; }
+    
+    .timeline { position: relative; padding-right: 2rem; }
+    .timeline::before { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, #0d6efd, #6f42c1, #d63384); border-radius: 3px; }
+    .timeline-item { position: relative; padding-right: 2rem; margin-bottom: 2rem; }
+    .timeline-item::before { content: ''; position: absolute; right: -0.6rem; top: 0.5rem; width: 14px; height: 14px; background: white; border: 3px solid #0d6efd; border-radius: 50%; }
+    .timeline-year { color: #0d6efd; font-weight: 700; font-size: 0.85rem; }
+    
+    .value-card { text-align: center; padding: 1.5rem; border: none; border-radius: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); height: 100%; transition: all 0.3s; }
+    .value-card:hover { transform: translateY(-5px); }
+    .value-icon { width: 55px; height: 55px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin: 0 auto 1rem; color: white; }
+    
+    @media (max-width: 768px) { .profile-card { padding: 1.5rem; } .avatar { width: 100px; height: 100px; font-size: 2.5rem; margin-top: -70px; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="container text-center text-white position-relative" style="z-index:2">
+        <h1 class="display-4 fw-bold mb-3">من أنا</h1>
+        <p class="lead opacity-75">مطور Odoo Technical | Python Backend | ERP Specialist</p>
+    </div>
+</section>
+
+<section class="py-4">
+    <div class="container"><div class="row justify-content-center"><div class="col-lg-8">
+        <div class="profile-card text-center">
+            <div class="avatar"><i class="fas fa-code"></i></div>
+            <h2 class="fw-bold">الوليد نمر</h2>
+            <p class="text-primary fw-bold">Odoo Technical Developer | Python Backend Engineer | ERP Specialist</p>
+            <p class="text-muted"><i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية</p>
+            <p class="lead">مرحباً بك في <strong>CodeNext</strong> - منصتك العربية لتعلم Python و Odoo. أنشأت هذه المنصة لأشارك شغفي بالبرمجة مع المجتمع العربي.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://github.com/waleednemer" class="btn btn-dark rounded-3"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/alwaleednasraldin/" class="btn text-white rounded-3" style="background:#0077b5;"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+        </div>
+    </div></div></div>
+</section>
+
+<section class="py-4"><div class="container"><div class="row g-3">
+    <div class="col-md-3 col-6"><div class="stat-card card"><div class="card-body"><div class="stat-icon" style="background:linear-gradient(135deg,#667eea,#764ba2);"><i class="fas fa-code"></i></div><div class="stat-value" style="color:#667eea;">+6</div><div class="stat-label">سنوات Python</div></div></div></div>
+    <div class="col-md-3 col-6"><div class="stat-card card"><div class="card-body"><div class="stat-icon" style="background:linear-gradient(135deg,#875A7B,#a24089);"><i class="fas fa-cubes"></i></div><div class="stat-value" style="color:#875A7B;">+3</div><div class="stat-label">سنوات Odoo</div></div></div></div>
+    <div class="col-md-3 col-6"><div class="stat-card card"><div class="card-body"><div class="stat-icon" style="background:linear-gradient(135deg,#f093fb,#f5576c);"><i class="fas fa-book-open"></i></div><div class="stat-value" style="color:#f5576c;">+110</div><div class="stat-label">درس تعليمي</div></div></div></div>
+    <div class="col-md-3 col-6"><div class="stat-card card"><div class="card-body"><div class="stat-icon" style="background:linear-gradient(135deg,#4facfe,#00f2fe);"><i class="fas fa-users"></i></div><div class="stat-value" style="color:#4facfe;">+10K</div><div class="stat-label">متعلّم</div></div></div></div>
+</div></div></section>
+
+<section class="py-5"><div class="container"><div class="row g-5">
+    <div class="col-lg-6">
+        <h3 class="fw-bold mb-3"><i class="fas fa-user text-primary"></i> عني</h3>
+        <p>مطور برمجيات متخصص في Python و Odoo ERP. بدأت رحلتي منذ 6 سنوات، وشغوف بمشاركة المعرفة ومساعدة الشباب العربي على دخول عالم التقنية.</p>
+        <ul><li>محتوى عربي احترافي</li><li>أمثلة عملية</li><li>تدرج منطقي</li><li>دعم مستمر</li></ul>
+    </div>
+    <div class="col-lg-6">
+        <h3 class="fw-bold mb-3"><i class="fas fa-cogs text-primary"></i> مهاراتي</h3>
+        <div class="skill-item"><div class="skill-info"><span>Python</span><span>95%</span></div><div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Odoo ERP</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Django</span><span>90%</span></div><div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>PostgreSQL</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div></div>
+        <div class="skill-item"><div class="skill-info"><span>Docker & DevOps</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div></div>
+    </div>
+</div></div></section>
+
+<section class="py-5 bg-light"><div class="container"><h3 class="fw-bold text-center mb-5"><i class="fas fa-briefcase text-primary"></i> خبرتي</h3><div class="row justify-content-center"><div class="col-lg-8"><div class="timeline">
+    <div class="timeline-item"><span class="timeline-year">2026 - الآن</span><h6>مؤسس CodeNext</h6><p class="text-muted small">منصة تعليمية عربية لـ Python و Odoo</p></div>
+    <div class="timeline-item"><span class="timeline-year">2022 - 2024</span><h6>مطور Odoo Senior</h6><p class="text-muted small">تطوير وحدات Odoo وتكامل أنظمة ERP</p></div>
+    <div class="timeline-item"><span class="timeline-year">2020 - 2022</span><h6>مطور Python</h6><p class="text-muted small">تطوير تطبيقات Django و FastAPI</p></div>
+    <div class="timeline-item"><span class="timeline-year">2018 - 2020</span><h6>بداية التعلم</h6><p class="text-muted small">الشغف بالبرمجة وبداية تعلم Python</p></div>
+</div></div></div></div></section>
+
+<section class="py-5"><div class="container"><h3 class="fw-bold text-center mb-4"><i class="fas fa-heart text-primary"></i> قيمي</h3><div class="row g-3">
+    <div class="col-md-3 col-6"><div class="value-card card"><div class="card-body"><div class="value-icon" style="background:linear-gradient(135deg,#667eea,#764ba2);"><i class="fas fa-lightbulb"></i></div><h6>البساطة</h6></div></div></div>
+    <div class="col-md-3 col-6"><div class="value-card card"><div class="card-body"><div class="value-icon" style="background:linear-gradient(135deg,#f093fb,#f5576c);"><i class="fas fa-hands-helping"></i></div><h6>المشاركة</h6></div></div></div>
+    <div class="col-md-3 col-6"><div class="value-card card"><div class="card-body"><div class="value-icon" style="background:linear-gradient(135deg,#4facfe,#00f2fe);"><i class="fas fa-chart-line"></i></div><h6>الاستمرارية</h6></div></div></div>
+    <div class="col-md-3 col-6"><div class="value-card card"><div class="card-body"><div class="value-icon" style="background:linear-gradient(135deg,#f6d365,#fda085);"><i class="fas fa-check-circle"></i></div><h6>الجودة</h6></div></div></div>
+</div></div></section>
+
+<section class="py-5"><div class="container"><div class="cta-box" style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:24px;padding:3rem;text-align:center;color:white;">
+    <h2 class="display-6 mb-3">هل أنت مستعد للبدء؟</h2>
+    <p class="lead mb-4 opacity-75">انضم إلى آلاف المتعلمين وابدأ بتعلم Python و Odoo اليوم</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="{% url 'core:python' %}" class="btn btn-lg px-4" style="background:linear-gradient(135deg,#667eea,#764ba2);color:white;border-radius:50px;"><i class="fab fa-python"></i> Python</a>
+        <a href="{% url 'core:odoo' %}" class="btn btn-lg px-4" style="background:linear-gradient(135deg,#875A7B,#a24089);color:white;border-radius:50px;"><i class="fas fa-cubes"></i> Odoo</a>
+        <a href="{% url 'contact:contact' %}" class="btn btn-lg px-4" style="background:#FFD43B;color:#333;border-radius:50px;"><i class="fas fa-envelope"></i> تواصل</a>
+    </div>
+</div></div></section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const so=new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.skill-progress').forEach(b=>{b.style.width=b.getAttribute('data-width')});so.unobserve(e.target)}})},{threshold:0.3});
+document.querySelectorAll('.skill-item').forEach(i=>{i.closest('.col-lg-6')&&so.observe(i.closest('.col-lg-6'))});
+const ao=new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.2});
+document.querySelectorAll('.stat-card,.value-card').forEach(c=>{c.style.opacity='0';c.style.transform='translateY(30px)';c.style.transition='all 0.6s ease';ao.observe(c)});
+</script>
+{% endblock %}

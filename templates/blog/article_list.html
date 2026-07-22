@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}جميع الدروس - تعلم Python و Odoo | CodeNext{% endblock %}
+
+{% block meta %}
+<meta name="description" content="تصفح جميع دروس Python و Odoo على CodeNext - من الأساسيات إلى المستوى المتقدم">
+<meta property="og:title" content="جميع الدروس - CodeNext">
+<meta property="og:description" content="تصفح جميع دروس Python و Odoo المنظمة والمرتبة">
+<link rel="canonical" href="{{ request.build_absolute_uri }}">
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .articles-header { background: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%); padding: 60px 0; position: relative; overflow: hidden; }
+    .articles-header::before { content: ''; position: absolute; top: -30%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.05); border-radius: 50%; }
+    .filter-bar { background: white; border-radius: 16px; padding: 1.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.08); margin-top: -30px; position: relative; z-index: 10; }
+    .filter-btn { border-radius: 10px; padding: 0.6rem 1.2rem; font-weight: 500; transition: all 0.3s ease; border: 2px solid #e9ecef; background: white; color: #555; white-space: nowrap; }
+    .filter-btn:hover, .filter-btn.active { background: linear-gradient(135deg, #0d6efd, #6f42c1); color: white; border-color: transparent; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(13, 110, 253, 0.2); }
+    .filter-btn .count { background: rgba(255,255,255,0.2); padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.8rem; margin-right: 0.5rem; }
+    .sort-select { border: 2px solid #e9ecef; border-radius: 10px; padding: 0.6rem 1.2rem; font-weight: 500; color: #555; cursor: pointer; background: white; }
+    .article-card { border: none; border-radius: 20px; overflow: hidden; transition: all 0.3s; background: white; box-shadow: 0 5px 20px rgba(0,0,0,0.06); height: 100%; }
+    .article-card:hover { transform: translateY(-8px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+    .article-card-img-wrapper { position: relative; height: 200px; overflow: hidden; }
+    .article-card-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+    .article-card:hover .article-card-img-wrapper img { transform: scale(1.05); }
+    .article-card-placeholder { height: 200px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .article-card-placeholder.bg-basics { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .article-card-placeholder.bg-oop { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+    .article-card-placeholder.bg-advanced { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+    .article-card-placeholder.bg-odoo-basics { background: linear-gradient(135deg, #875A7B 0%, #a24089 100%); }
+    .article-card-placeholder.bg-odoo-dev { background: linear-gradient(135deg, #5c3a5c 0%, #875A7B 100%); }
+    .article-card-placeholder.bg-odoo-adv { background: linear-gradient(135deg, #3a1a3a 0%, #5c3a5c 100%); }
+    .placeholder-pattern { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: radial-gradient(circle at 20% 50%, white 0%, transparent 50%), radial-gradient(circle at 80% 20%, white 0%, transparent 40%); }
+    .placeholder-content { position: relative; z-index: 2; text-align: center; }
+    .placeholder-icon { font-size: 3rem; color: rgba(255,255,255,0.9); margin-bottom: 0.5rem; }
+    .placeholder-text { font-size: 0.8rem; color: rgba(255,255,255,0.8); font-weight: 500; }
+    .category-badge { position: absolute; top: 15px; right: 15px; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.7rem; font-weight: 600; color: white; backdrop-filter: blur(10px); z-index: 3; }
+    .badge-basics { background: rgba(102, 126, 234, 0.85); }
+    .badge-oop { background: rgba(245, 87, 108, 0.85); }
+    .badge-advanced { background: rgba(0, 200, 250, 0.75); color: #333; }
+    .badge-odoo { background: rgba(135, 90, 123, 0.85); }
+    .article-card-body { padding: 1.5rem; }
+    .article-card-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.8rem; }
+    .article-card-title a { color: #333; text-decoration: none; }
+    .article-card-title a:hover { color: #0d6efd; }
+    .article-card-excerpt { color: #777; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem; }
+    .article-card-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: #999; }
+    .empty-state { text-align: center; padding: 80px 20px; }
+    .empty-state-icon { font-size: 6rem; color: #dee2e6; margin-bottom: 1.5rem; }
+    .pagination .page-link { border-radius: 12px; margin: 0 4px; border: 2px solid #e9ecef; color: #555; padding: 0.7rem 1.2rem; font-weight: 500; }
+    .pagination .page-link:hover { background: #f0f7ff; border-color: #0d6efd; color: #0d6efd; }
+    .pagination .page-item.active .page-link { background: linear-gradient(135deg, #0d6efd, #6f42c1); border-color: transparent; color: white; }
+    .results-info { background: #f0f7ff; border-radius: 12px; padding: 0.8rem 1.2rem; font-weight: 500; color: #0d6efd; }
+    @media (max-width: 768px) { .filter-bar { padding: 1rem; } .filter-btn { font-size: 0.85rem; } .article-card-img-wrapper, .article-card-placeholder { height: 160px; } }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="articles-header">
+    <div class="container text-center text-white position-relative" style="z-index: 2;">
+        <i class="fas fa-book-open fa-3x mb-3"></i>
+        <h1 class="display-4 fw-bold mb-3">جميع الدروس</h1>
+        <p class="lead opacity-90">تصفح جميع دروس Python و Odoo المنظمة والمرتبة حسب المستوى</p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="filter-bar mb-5">
+            <div class="row align-items-center g-3">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="{% url 'blog:article_list' %}" class="filter-btn {% if not request.GET.category %}active{% endif %}">
+                            <i class="fas fa-th-large"></i> الكل
+                            <span class="count">{{ articles.paginator.count|default:"0" }}</span>
+                        </a>
+                        {% for cat in all_categories %}
+                        <a href="{% url 'blog:category' slug=cat.slug %}" class="filter-btn">
+                            {% if 'python-basics' in cat.slug %}🐍
+                            {% elif 'python-oop' in cat.slug %}🏗️
+                            {% elif 'python-advanced' in cat.slug %}🚀
+                            {% elif 'odoo-basics' in cat.slug %}🟢
+                            {% elif 'odoo-development' in cat.slug %}🟡
+                            {% elif 'odoo-advanced' in cat.slug %}🔴
+                            {% else %}📚{% endif %}
+                            {{ cat.name }}
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <select class="sort-select" onchange="location = this.value;">
+                        <option value="?sort=newest" {% if request.GET.sort == 'newest' %}selected{% endif %}>🕐 الأحدث</option>
+                        <option value="?sort=popular" {% if request.GET.sort == 'popular' %}selected{% endif %}>🔥 الأكثر مشاهدة</option>
+                        <option value="?sort=oldest" {% if request.GET.sort == 'oldest' %}selected{% endif %}>📅 الأقدم</option>
+                    </select>
+                </div>
+            </div>
+            {% if articles %}
+            <div class="results-info mt-3">
+                عرض <strong>{{ articles.start_index }}-{{ articles.end_index }}</strong> من <strong>{{ articles.paginator.count }}</strong> درس
+            </div>
+            {% endif %}
+        </div>
+        
+        {% if articles %}
+        <div class="row g-4">
+            {% for article in articles %}
+            <div class="col-lg-4 col-md-6">
+                <article class="article-card card">
+                    <div class="article-card-img-wrapper">
+                        {% if article.featured_image %}
+                        <img src="{{ article.featured_image.url }}" alt="{{ article.title }}" loading="lazy">
+                        {% else %}
+                        <div class="article-card-placeholder 
+                            {% if 'python-basics' in article.category.slug %}bg-basics
+                            {% elif 'python-oop' in article.category.slug %}bg-oop
+                            {% elif 'python-advanced' in article.category.slug %}bg-advanced
+                            {% elif 'odoo-basics' in article.category.slug %}bg-odoo-basics
+                            {% elif 'odoo-development' in article.category.slug %}bg-odoo-dev
+                            {% elif 'odoo-advanced' in article.category.slug %}bg-odoo-adv
+                            {% else %}bg-basics{% endif %}">
+                            <div class="placeholder-pattern"></div>
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">
+                                    {% if 'python-basics' in article.category.slug %}🐍
+                                    {% elif 'python-oop' in article.category.slug %}🏗️
+                                    {% elif 'python-advanced' in article.category.slug %}🚀
+                                    {% elif 'odoo' in article.category.slug %}📦
+                                    {% else %}📚{% endif %}
+                                </div>
+                                <div class="placeholder-text">{{ article.category.name }}</div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <span class="category-badge 
+                            {% if 'python-basics' in article.category.slug %}badge-basics
+                            {% elif 'python-oop' in article.category.slug %}badge-oop
+                            {% elif 'python-advanced' in article.category.slug %}badge-advanced
+                            {% else %}badge-odoo{% endif %}">
+                            {{ article.category.name }}
+                        </span>
+                    </div>
+                    <div class="article-card-body">
+                        <h5 class="article-card-title">
+                            {% if article.slug %}
+                            <a href="{% url 'blog:article_detail' article.slug %}">{{ article.title }}</a>
+                            {% else %}<span>{{ article.title }}</span>{% endif %}
+                        </h5>
+                        <p class="article-card-excerpt">{{ article.excerpt|truncatewords:18 }}</p>
+                        <div class="article-card-meta">
+                            <span><i class="far fa-calendar-alt"></i> {{ article.created_at|date:"j F Y" }}</span>
+                            <div>
+                                <span class="me-2"><i class="far fa-eye"></i> {{ article.views }}</span>
+                                <span><i class="far fa-clock"></i> {{ article.reading_time }}</span>
+                            </div>
+                        </div>
+                        {% if article.slug %}
+                        <a href="{% url 'blog:article_detail' article.slug %}" class="btn btn-sm btn-outline-primary w-100 mt-3">
+                            <i class="fas fa-arrow-left"></i> اقرأ الدرس
+                        </a>
+                        {% endif %}
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+        
+        {% if articles.has_other_pages %}
+        <div class="mt-5">
+            <nav>
+                <ul class="pagination justify-content-center">
+                    {% if articles.has_previous %}
+                    <li class="page-item"><a class="page-link" href="?page={{ articles.previous_page_number }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}"><i class="fas fa-chevron-right"></i> السابق</a></li>
+                    {% else %}
+                    <li class="page-item disabled"><span class="page-link"><i class="fas fa-chevron-right"></i> السابق</span></li>
+                    {% endif %}
+                    {% for num in articles.paginator.page_range %}
+                        {% if articles.number == num %}<li class="page-item active"><span class="page-link">{{ num }}</span></li>
+                        {% elif num > articles.number|add:'-3' and num < articles.number|add:'3' %}
+                        <li class="page-item"><a class="page-link" href="?page={{ num }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}">{{ num }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    {% if articles.has_next %}
+                    <li class="page-item"><a class="page-link" href="?page={{ articles.next_page_number }}{% if request.GET.sort %}&sort={{ request.GET.sort }}{% endif %}">التالي <i class="fas fa-chevron-left"></i></a></li>
+                    {% else %}
+                    <li class="page-item disabled"><span class="page-link">التالي <i class="fas fa-chevron-left"></i></span></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+        {% endif %}
+        {% else %}
+        <div class="empty-state">
+            <div class="empty-state-icon"><i class="far fa-folder-open"></i></div>
+            <h3>لا توجد دروس حالياً</h3>
+            <a href="{% url 'core:home' %}" class="btn btn-primary btn-lg"><i class="fas fa-home"></i> العودة</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h3 class="mb-3">هل تبحث عن درس محدد؟</h3>
+        <form action="{% url 'search:search' %}" method="GET" class="d-flex justify-content-center">
+            <div class="input-group" style="max-width: 500px;">
+                <input type="search" name="q" class="form-control form-control-lg" placeholder="ابحث عن درس...">
+                <button class="btn btn-primary btn-lg" type="submit"><i class="fas fa-search"></i> بحث</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

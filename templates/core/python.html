@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}تعلم Python - مسارات التعلم | CodeNext{% endblock %}
+
+{% block meta %}
+<meta name="description" content="تعلم Python من الصفر إلى الاحتراف مع مسارات تعلم منظمة - Python Basics، Python OOP، Python Advanced، Python Projects">
+<meta property="og:title" content="تعلم Python - CodeNext">
+<meta property="og:description" content="اختر مسار التعلم المناسب لك وابدأ رحلتك في عالم Python">
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .page-header { background: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%); padding: 80px 0 60px; position: relative; overflow: hidden; }
+    .page-header::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: rgba(255,255,255,0.05); border-radius: 50%; animation: pulse 4s ease-in-out infinite; }
+    .page-header::after { content: ''; position: absolute; bottom: -30%; left: -10%; width: 400px; height: 400px; background: rgba(255,255,255,0.03); border-radius: 50%; animation: pulse 4s ease-in-out 1s infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.1)} }
+    .page-header-content { position: relative; z-index: 2; }
+    .breadcrumb { background: transparent; padding: 0; margin-bottom: 1.5rem; }
+    .breadcrumb-item a { color: rgba(255,255,255,0.8); text-decoration: none; }
+    .breadcrumb-item.active { color: white; }
+    
+    .path-card { border: none; border-radius: 24px; overflow: hidden; transition: all 0.4s; background: white; box-shadow: 0 10px 40px rgba(0,0,0,0.08); height: 100%; display: flex; flex-direction: column; }
+    .path-card:hover { transform: translateY(-12px); box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
+    .path-card-header { padding: 40px 30px 20px; text-align: center; position: relative; }
+    .path-card-header.py-basics { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .path-card-header.py-oop { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+    .path-card-header.py-advanced { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+    .path-card-header.py-projects { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+    .path-icon { width: 90px; height: 90px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem; color: white; border: 3px solid rgba(255,255,255,0.3); transition: all 0.3s; }
+    .path-card:hover .path-icon { transform: rotate(10deg) scale(1.1); background: rgba(255,255,255,0.3); }
+    .level-badge { position: absolute; top: 20px; left: 20px; padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; background: rgba(255,255,255,0.25); color: white; backdrop-filter: blur(10px); }
+    .path-card-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
+    .path-stats { display: flex; justify-content: space-around; margin: 25px 0; padding: 20px 0; border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0; }
+    .path-stat { text-align: center; } .path-stat-value { font-size: 1.8rem; font-weight: 700; color: #333; } .path-stat-label { font-size: 0.85rem; color: #888; }
+    .path-topics { list-style: none; padding: 0; margin: 20px 0; flex: 1; }
+    .path-topics li { padding: 8px 0; color: #666; font-size: 0.9rem; display: flex; align-items: center; }
+    .path-topics li i { color: #28a745; margin-left: 10px; }
+    .step-card { text-align: center; padding: 40px 20px; position: relative; }
+    .step-number { width: 70px; height: 70px; background: linear-gradient(135deg, #0d6efd, #6f42c1); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 700; margin: 0 auto 1.5rem; }
+    .step-connector { position: absolute; top: 35px; right: -30px; width: 60px; height: 2px; background: #dee2e6; }
+    @media (max-width: 768px) { .step-connector { display: none; } }
+    .accordion-button:not(.collapsed) { background: linear-gradient(135deg, #0d6efd, #6f42c1); color: white; }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container page-header-content">
+        <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="{% url 'core:home' %}">الرئيسية</a></li><li class="breadcrumb-item active">تعلم Python</li></ol></nav>
+        <div class="row align-items-center"><div class="col-lg-8">
+            <h1 class="display-4 fw-bold text-white mb-4">تعلم Python <span style="background: linear-gradient(to left, #ffd700, #ff6b6b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">باحترافية</span></h1>
+            <p class="lead text-white opacity-90 mb-4">رحلة تعلم متكاملة من الأساسيات إلى المفاهيم المتقدمة. محتوى عربي 100% مع أمثلة عملية.</p>
+            <div class="d-flex gap-3 flex-wrap">
+                <span class="text-white"><i class="fas fa-check-circle text-success me-2"></i>محتوى محدث</span>
+                <span class="text-white"><i class="fas fa-check-circle text-success me-2"></i>دروس تفاعلية</span>
+                <span class="text-white"><i class="fas fa-check-circle text-success me-2"></i>تمارين عملية</span>
+            </div>
+        </div></div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5"><h2 class="display-5 fw-bold mb-3">اختر مسار Python</h2><p class="lead text-muted">مسارات متدرجة تناسب جميع المستويات</p></div>
+        <div class="row g-4">
+            {% for category in categories %}
+            <div class="col-lg-3 col-md-6 d-flex">
+                <div class="card path-card h-100 w-100">
+                    {% if 'basics' in category.slug %}
+                    <div class="path-card-header py-basics"><span class="level-badge">مبتدئ</span><div class="path-icon"><i class="fas fa-seedling"></i></div><h3 class="text-white">{{ category.name }}</h3></div>
+                    {% elif 'oop' in category.slug %}
+                    <div class="path-card-header py-oop"><span class="level-badge">متوسط</span><div class="path-icon"><i class="fas fa-cubes"></i></div><h3 class="text-white">{{ category.name }}</h3></div>
+                    {% elif 'advanced' in category.slug %}
+                    <div class="path-card-header py-advanced"><span class="level-badge">متقدم</span><div class="path-icon"><i class="fas fa-rocket"></i></div><h3 class="text-white">{{ category.name }}</h3></div>
+                    {% else %}
+                    <div class="path-card-header py-projects"><span class="level-badge">تطبيقي</span><div class="path-icon"><i class="fas fa-tasks"></i></div><h3 class="text-white">{{ category.name }}</h3></div>
+                    {% endif %}
+                    <div class="path-card-body">
+                        <p class="text-muted small">{{ category.description }}</p>
+                        <div class="path-stats"><div class="path-stat"><div class="path-stat-value">{{ category.article_count }}</div><div class="path-stat-label">درس</div></div><div class="path-stat"><div class="path-stat-value">{{ category.article_count|add:2 }}</div><div class="path-stat-label">ساعة</div></div></div>
+                        <ul class="path-topics">
+                            {% if 'basics' in category.slug %}<li><i class="fas fa-check-circle"></i> المتغيرات والشروط</li><li><i class="fas fa-check-circle"></i> الحلقات والدوال</li><li><i class="fas fa-check-circle"></i> القوائم والقواميس</li>{% elif 'oop' in category.slug %}<li><i class="fas fa-check-circle"></i> الكلاسات والكائنات</li><li><i class="fas fa-check-circle"></i> الوراثة والتغليف</li><li><i class="fas fa-check-circle"></i> تعدد الأشكال</li>{% elif 'advanced' in category.slug %}<li><i class="fas fa-check-circle"></i> الديكورات والمولدات</li><li><i class="fas fa-check-circle"></i> Threading و Asyncio</li><li><i class="fas fa-check-circle"></i> API و FastAPI</li>{% else %}<li><i class="fas fa-check-circle"></i> مشاريع عملية كاملة</li><li><i class="fas fa-check-circle"></i> تطبيقات حقيقية</li>{% endif %}
+                        </ul>
+                        <a href="{{ category.get_absolute_url }}" class="btn btn-primary btn-lg w-100 mt-auto"><i class="fas fa-play-circle"></i> ابدأ هذا المسار</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light"><div class="container"><div class="text-center mb-5"><h2 class="display-5 fw-bold mb-3">كيف تتعلم؟</h2></div><div class="row g-4"><div class="col-md-3"><div class="step-card"><div class="step-number">1</div><h5>اختر المسار</h5><div class="step-connector d-none d-md-block"></div></div></div><div class="col-md-3"><div class="step-card"><div class="step-number">2</div><h5>ادرس الدروس</h5><div class="step-connector d-none d-md-block"></div></div></div><div class="col-md-3"><div class="step-card"><div class="step-number">3</div><h5>طبق عملياً</h5><div class="step-connector d-none d-md-block"></div></div></div><div class="col-md-3"><div class="step-card"><div class="step-number">4</div><h5>طور مهاراتك</h5></div></div></div></div></section>
+<section class="py-5">
+    <div class="container">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="card-body p-5 text-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <h2 class="text-white display-6 mb-3">جاهز لبدء تعلم Python؟</h2>
+                <div class="d-flex gap-3 justify-content-center">
+                    <a href="{% url 'blog:category' slug='python-basics' %}" class="btn btn-light btn-lg">
+                        <i class="fab fa-python"></i> ابدأ من الأساسيات
+                    </a>
+                    <a href="{% url 'blog:article_list' %}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-book"></i> تصفح الدروس
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

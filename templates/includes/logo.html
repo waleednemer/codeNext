@@ -1,0 +1,51 @@
+<a href="{% url 'core:home' %}" class="navbar-brand d-flex align-items-center gap-2">
+    <div class="logo-icon">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-slash">/</span>
+        <span class="logo-bracket">&gt;</span>
+    </div>
+    <div>
+        <span class="logo-text">Code<span class="logo-highlight">Next</span></span>
+        <small class="logo-sub">Python بالعربية</small>
+    </div>
+</a>
+
+<style>
+.logo-icon {
+    background: linear-gradient(135deg, #0d6efd, #6f42c1);
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.logo-icon:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+.logo-bracket { color: #FFD43B; }
+.logo-slash { color: white; margin: 0 -2px; }
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #333;
+}
+.logo-highlight {
+    background: linear-gradient(135deg, #0d6efd, #6f42c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.logo-sub {
+    display: block;
+    font-size: 0.6rem;
+    color: #888;
+    margin-top: -2px;
+}
+</style>
