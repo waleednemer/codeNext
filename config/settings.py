@@ -155,3 +155,21 @@ CKEDITOR_CONFIGS = {
 # إعدادات SEO
 SITE_NAME = 'CodeNext - تعلم Python بالعربية'
 SITE_DESCRIPTION = 'منصة تعليمية عربية متخصصة في تعلم لغة Python من الصفر إلى الاحتراف'
+
+# ===== إعدادات الإنتاج =====
+import os
+import dj_database_url
+
+SECRET_KEY = os.environ.get('SECRET_KEY', 'replace-this-secret-key')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+ALLOWED_HOSTS = ['*', '.railway.app', '.up.railway.app']
+
+# Whitenoise للملفات الثابتة
+MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# قاعدة البيانات
+DATABASES = {
+    'default': dj_database_url.config(default=f"sqlite:///{BASE_DIR}/db.sqlite3", conn_max_age=600)
+}
