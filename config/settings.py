@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-f3+f^x08%vb8^lm!(%h($6d03t^f6no=g8_a5r8i^aa)nlc5!m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
@@ -173,21 +173,3 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DATABASES = {
     'default': dj_database_url.config(default=f"sqlite:///{BASE_DIR}/db.sqlite3", conn_max_age=600)
 }
-
-import os
-
-DJANGO_SUPERUSER_USERNAME = os.getenv("DJANGO_SUPERUSER_USERNAME")
-DJANGO_SUPERUSER_EMAIL = os.getenv("DJANGO_SUPERUSER_EMAIL")
-DJANGO_SUPERUSER_PASSWORD = os.getenv("DJANGO_SUPERUSER_PASSWORD")
-
-if os.environ.get("CREATE_SUPERUSER") == "True":
-    from django.contrib.auth import get_user_model
-
-    User = get_user_model()
-
-    username = os.environ.get("DJANGO_SUPERUSER_USERNAME", "admin")
-    email = os.environ.get("DJANGO_SUPERUSER_EMAIL", "waleednemer6@gmail.com")
-    password = os.environ.get("DJANGO_SUPERUSER_PASSWORD", "python%!@#MAX7")
-
-    if not User.objects.filter(username=username).exists():
-        User.objects.create_superuser(username, email, password)

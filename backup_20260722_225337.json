@@ -1,0 +1,5196 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 7,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 7,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 7,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 7,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 8,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 8,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 8,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 8,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add تصنيف",
+    "content_type": 9,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change تصنيف",
+    "content_type": 9,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete تصنيف",
+    "content_type": 9,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view تصنيف",
+    "content_type": 9,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add مقال",
+    "content_type": 10,
+    "codename": "add_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change مقال",
+    "content_type": 10,
+    "codename": "change_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete مقال",
+    "content_type": 10,
+    "codename": "delete_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view مقال",
+    "content_type": 10,
+    "codename": "view_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add رسالة",
+    "content_type": 11,
+    "codename": "add_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change رسالة",
+    "content_type": 11,
+    "codename": "change_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete رسالة",
+    "content_type": 11,
+    "codename": "delete_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view رسالة",
+    "content_type": 11,
+    "codename": "view_contact"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$MIlPJRM5kH5Lp6kQfkU5lw$e93L1nu1ISxuwkYHp+MOikgv43rEW1uAdP7dzhAZnX0=",
+    "last_login": "2026-07-22T19:27:21.363Z",
+    "is_superuser": true,
+    "username": "waleednemer",
+    "first_name": "",
+    "last_name": "",
+    "email": "waleednemer6@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-07-22T19:21:15.462Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "blog",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "blog",
+    "model": "article"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "contact",
+    "model": "contact"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ggjmge1pqzea8cec7catyz9t1y19xtu9",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZvM6ylPScwfJnjQPIluKkQtwdIqWA9s3Meynn16W4tcvspqTOCtThdws-PqRuIN19vTUdW13mKehN0Tvt-tqSPC-7-3dQfC_fOpBEC1YoHQ2wARsB84nziEYyeEJDKGzDYJjQgjdAARllTIOQMKv3B8hDNvw:1wmcbB:njUqSLfNUSlZY6BOL11G25RtYsO1qugQ7_nEmQ_6lic",
+    "expire_date": "2026-08-05T19:27:21.366Z"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "python",
+    "slug": "python"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "مقدمة",
+    "slug": "مقدمة"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "تثبيت",
+    "slug": "تثبيت"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "متغيرات",
+    "slug": "متغيرات"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "if",
+    "slug": "if"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "شروط",
+    "slug": "شروط"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "for",
+    "slug": "for"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "while",
+    "slug": "while"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "functions",
+    "slug": "functions"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 10,
+  "fields": {
+    "name": "lambda",
+    "slug": "lambda"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 11,
+  "fields": {
+    "name": "lists",
+    "slug": "lists"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 12,
+  "fields": {
+    "name": "dict",
+    "slug": "dict"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 13,
+  "fields": {
+    "name": "sets",
+    "slug": "sets"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 14,
+  "fields": {
+    "name": "tuples",
+    "slug": "tuples"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 15,
+  "fields": {
+    "name": "strings",
+    "slug": "strings"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 16,
+  "fields": {
+    "name": "exceptions",
+    "slug": "exceptions"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 17,
+  "fields": {
+    "name": "modules",
+    "slug": "modules"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 18,
+  "fields": {
+    "name": "comprehension",
+    "slug": "comprehension"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 19,
+  "fields": {
+    "name": "json",
+    "slug": "json"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 20,
+  "fields": {
+    "name": "csv",
+    "slug": "csv"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 21,
+  "fields": {
+    "name": "datetime",
+    "slug": "datetime"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 22,
+  "fields": {
+    "name": "venv",
+    "slug": "venv"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 23,
+  "fields": {
+    "name": "git",
+    "slug": "git"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 24,
+  "fields": {
+    "name": "requests",
+    "slug": "requests"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 25,
+  "fields": {
+    "name": "pillow",
+    "slug": "pillow"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 26,
+  "fields": {
+    "name": "regex",
+    "slug": "regex"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 27,
+  "fields": {
+    "name": "tips",
+    "slug": "tips"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 28,
+  "fields": {
+    "name": "review",
+    "slug": "review"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 29,
+  "fields": {
+    "name": "oop",
+    "slug": "oop"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 30,
+  "fields": {
+    "name": "init",
+    "slug": "init"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 31,
+  "fields": {
+    "name": "inheritance",
+    "slug": "inheritance"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 32,
+  "fields": {
+    "name": "polymorphism",
+    "slug": "polymorphism"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 33,
+  "fields": {
+    "name": "encapsulation",
+    "slug": "encapsulation"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 34,
+  "fields": {
+    "name": "abstraction",
+    "slug": "abstraction"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 35,
+  "fields": {
+    "name": "property",
+    "slug": "property"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 36,
+  "fields": {
+    "name": "magic",
+    "slug": "magic"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 37,
+  "fields": {
+    "name": "classmethod",
+    "slug": "classmethod"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 38,
+  "fields": {
+    "name": "dataclass",
+    "slug": "dataclass"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 39,
+  "fields": {
+    "name": "enum",
+    "slug": "enum"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 40,
+  "fields": {
+    "name": "patterns",
+    "slug": "patterns"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 41,
+  "fields": {
+    "name": "decorators",
+    "slug": "decorators"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 42,
+  "fields": {
+    "name": "generators",
+    "slug": "generators"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 43,
+  "fields": {
+    "name": "args",
+    "slug": "args"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 44,
+  "fields": {
+    "name": "context",
+    "slug": "context"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 45,
+  "fields": {
+    "name": "iterators",
+    "slug": "iterators"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 46,
+  "fields": {
+    "name": "threading",
+    "slug": "threading"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 47,
+  "fields": {
+    "name": "asyncio",
+    "slug": "asyncio"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 48,
+  "fields": {
+    "name": "typing",
+    "slug": "typing"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 49,
+  "fields": {
+    "name": "testing",
+    "slug": "testing"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 50,
+  "fields": {
+    "name": "logging",
+    "slug": "logging"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 51,
+  "fields": {
+    "name": "env",
+    "slug": "env"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 52,
+  "fields": {
+    "name": "scraping",
+    "slug": "scraping"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 53,
+  "fields": {
+    "name": "fastapi",
+    "slug": "fastapi"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 54,
+  "fields": {
+    "name": "docker",
+    "slug": "docker"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 55,
+  "fields": {
+    "name": "project",
+    "slug": "project"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 56,
+  "fields": {
+    "name": "odoo",
+    "slug": "odoo"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 57,
+  "fields": {
+    "name": "erp",
+    "slug": "erp"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 58,
+  "fields": {
+    "name": "واجهة",
+    "slug": "واجهة"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 59,
+  "fields": {
+    "name": "sql",
+    "slug": "sql"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 60,
+  "fields": {
+    "name": "model",
+    "slug": "model"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 61,
+  "fields": {
+    "name": "views",
+    "slug": "views"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 62,
+  "fields": {
+    "name": "actions",
+    "slug": "actions"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 63,
+  "fields": {
+    "name": "security",
+    "slug": "security"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 64,
+  "fields": {
+    "name": "beginners",
+    "slug": "beginners"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 65,
+  "fields": {
+    "name": "اساسيات",
+    "slug": "اساسيات"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 66,
+  "fields": {
+    "name": "معاملات",
+    "slug": "معاملات"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 67,
+  "fields": {
+    "name": "operators",
+    "slug": "operators"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 68,
+  "fields": {
+    "name": "arithmetic",
+    "slug": "arithmetic"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 69,
+  "fields": {
+    "name": "else",
+    "slug": "else"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 70,
+  "fields": {
+    "name": "elif",
+    "slug": "elif"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 71,
+  "fields": {
+    "name": "conditions",
+    "slug": "conditions"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 72,
+  "fields": {
+    "name": "loops",
+    "slug": "loops"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 73,
+  "fields": {
+    "name": "حلقات",
+    "slug": "حلقات"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 74,
+  "fields": {
+    "name": "list-comprehension",
+    "slug": "list-comprehension"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 75,
+  "fields": {
+    "name": "قواميس",
+    "slug": "قواميس"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 76,
+  "fields": {
+    "name": "f-strings",
+    "slug": "f-strings"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 77,
+  "fields": {
+    "name": "files",
+    "slug": "files"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 78,
+  "fields": {
+    "name": "open",
+    "slug": "open"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 79,
+  "fields": {
+    "name": "try",
+    "slug": "try"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 80,
+  "fields": {
+    "name": "except",
+    "slug": "except"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 81,
+  "fields": {
+    "name": "import",
+    "slug": "import"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 82,
+  "fields": {
+    "name": "built-in",
+    "slug": "built-in"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 83,
+  "fields": {
+    "name": "pip",
+    "slug": "pip"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 84,
+  "fields": {
+    "name": "github",
+    "slug": "github"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 85,
+  "fields": {
+    "name": "api",
+    "slug": "api"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 86,
+  "fields": {
+    "name": "images",
+    "slug": "images"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 87,
+  "fields": {
+    "name": "class",
+    "slug": "class"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 88,
+  "fields": {
+    "name": "object",
+    "slug": "object"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 89,
+  "fields": {
+    "name": "abc",
+    "slug": "abc"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 90,
+  "fields": {
+    "name": "dunder",
+    "slug": "dunder"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 91,
+  "fields": {
+    "name": "mro",
+    "slug": "mro"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 92,
+  "fields": {
+    "name": "staticmethod",
+    "slug": "staticmethod"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 93,
+  "fields": {
+    "name": "oop-review",
+    "slug": "oop-review"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 94,
+  "fields": {
+    "name": "yield",
+    "slug": "yield"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 95,
+  "fields": {
+    "name": "kwargs",
+    "slug": "kwargs"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 96,
+  "fields": {
+    "name": "advanced-review",
+    "slug": "advanced-review"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 97,
+  "fields": {
+    "name": "install",
+    "slug": "install"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 98,
+  "fields": {
+    "name": "ubuntu",
+    "slug": "ubuntu"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 99,
+  "fields": {
+    "name": "ui",
+    "slug": "ui"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 100,
+  "fields": {
+    "name": "interface",
+    "slug": "interface"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 101,
+  "fields": {
+    "name": "postgresql",
+    "slug": "postgresql"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 102,
+  "fields": {
+    "name": "fields",
+    "slug": "fields"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 103,
+  "fields": {
+    "name": "form",
+    "slug": "form"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 104,
+  "fields": {
+    "name": "tree",
+    "slug": "tree"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 105,
+  "fields": {
+    "name": "menus",
+    "slug": "menus"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 106,
+  "fields": {
+    "name": "acl",
+    "slug": "acl"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 107,
+  "fields": {
+    "name": "computed",
+    "slug": "computed"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 108,
+  "fields": {
+    "name": "constraints",
+    "slug": "constraints"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 109,
+  "fields": {
+    "name": "kanban",
+    "slug": "kanban"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 110,
+  "fields": {
+    "name": "search",
+    "slug": "search"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 111,
+  "fields": {
+    "name": "buttons",
+    "slug": "buttons"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 112,
+  "fields": {
+    "name": "workflow",
+    "slug": "workflow"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 113,
+  "fields": {
+    "name": "wizard",
+    "slug": "wizard"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 114,
+  "fields": {
+    "name": "i18n",
+    "slug": "i18n"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 115,
+  "fields": {
+    "name": "translation",
+    "slug": "translation"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 116,
+  "fields": {
+    "name": "data",
+    "slug": "data"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 117,
+  "fields": {
+    "name": "cron",
+    "slug": "cron"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 118,
+  "fields": {
+    "name": "xmlrpc",
+    "slug": "xmlrpc"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 119,
+  "fields": {
+    "name": "tests",
+    "slug": "tests"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 120,
+  "fields": {
+    "name": "reports",
+    "slug": "reports"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 121,
+  "fields": {
+    "name": "pdf",
+    "slug": "pdf"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 122,
+  "fields": {
+    "name": "controllers",
+    "slug": "controllers"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 123,
+  "fields": {
+    "name": "routing",
+    "slug": "routing"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 124,
+  "fields": {
+    "name": "website",
+    "slug": "website"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 125,
+  "fields": {
+    "name": "mixins",
+    "slug": "mixins"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 126,
+  "fields": {
+    "name": "dashboard",
+    "slug": "dashboard"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 127,
+  "fields": {
+    "name": "abstract",
+    "slug": "abstract"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 128,
+  "fields": {
+    "name": "rest",
+    "slug": "rest"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 129,
+  "fields": {
+    "name": "configuration",
+    "slug": "configuration"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 130,
+  "fields": {
+    "name": "shell",
+    "slug": "shell"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 131,
+  "fields": {
+    "name": "debugging",
+    "slug": "debugging"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 132,
+  "fields": {
+    "name": "theme",
+    "slug": "theme"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 133,
+  "fields": {
+    "name": "scss",
+    "slug": "scss"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 157,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 70
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 158,
+  "fields": {
+    "tag": 2,
+    "content_type": 10,
+    "object_id": 70
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 159,
+  "fields": {
+    "tag": 3,
+    "content_type": 10,
+    "object_id": 70
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 160,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 71
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 161,
+  "fields": {
+    "tag": 67,
+    "content_type": 10,
+    "object_id": 71
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 162,
+  "fields": {
+    "tag": 66,
+    "content_type": 10,
+    "object_id": 71
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 163,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 72
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 164,
+  "fields": {
+    "tag": 5,
+    "content_type": 10,
+    "object_id": 72
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 165,
+  "fields": {
+    "tag": 6,
+    "content_type": 10,
+    "object_id": 72
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 166,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 73
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 167,
+  "fields": {
+    "tag": 7,
+    "content_type": 10,
+    "object_id": 73
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 168,
+  "fields": {
+    "tag": 8,
+    "content_type": 10,
+    "object_id": 73
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 169,
+  "fields": {
+    "tag": 73,
+    "content_type": 10,
+    "object_id": 73
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 170,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 74
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 171,
+  "fields": {
+    "tag": 9,
+    "content_type": 10,
+    "object_id": 74
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 172,
+  "fields": {
+    "tag": 10,
+    "content_type": 10,
+    "object_id": 74
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 173,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 75
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 174,
+  "fields": {
+    "tag": 11,
+    "content_type": 10,
+    "object_id": 75
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 175,
+  "fields": {
+    "tag": 74,
+    "content_type": 10,
+    "object_id": 75
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 176,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 76
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 177,
+  "fields": {
+    "tag": 12,
+    "content_type": 10,
+    "object_id": 76
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 178,
+  "fields": {
+    "tag": 75,
+    "content_type": 10,
+    "object_id": 76
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 179,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 77
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 180,
+  "fields": {
+    "tag": 13,
+    "content_type": 10,
+    "object_id": 77
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 181,
+  "fields": {
+    "tag": 14,
+    "content_type": 10,
+    "object_id": 77
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 182,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 78
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 183,
+  "fields": {
+    "tag": 15,
+    "content_type": 10,
+    "object_id": 78
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 184,
+  "fields": {
+    "tag": 76,
+    "content_type": 10,
+    "object_id": 78
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 185,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 79
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 186,
+  "fields": {
+    "tag": 77,
+    "content_type": 10,
+    "object_id": 79
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 187,
+  "fields": {
+    "tag": 78,
+    "content_type": 10,
+    "object_id": 79
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 188,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 80
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 189,
+  "fields": {
+    "tag": 79,
+    "content_type": 10,
+    "object_id": 80
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 190,
+  "fields": {
+    "tag": 80,
+    "content_type": 10,
+    "object_id": 80
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 191,
+  "fields": {
+    "tag": 16,
+    "content_type": 10,
+    "object_id": 80
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 192,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 81
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 193,
+  "fields": {
+    "tag": 17,
+    "content_type": 10,
+    "object_id": 81
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 194,
+  "fields": {
+    "tag": 81,
+    "content_type": 10,
+    "object_id": 81
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 195,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 82
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 196,
+  "fields": {
+    "tag": 18,
+    "content_type": 10,
+    "object_id": 82
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 197,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 83
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 198,
+  "fields": {
+    "tag": 82,
+    "content_type": 10,
+    "object_id": 83
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 199,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 84
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 200,
+  "fields": {
+    "tag": 19,
+    "content_type": 10,
+    "object_id": 84
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 201,
+  "fields": {
+    "tag": 20,
+    "content_type": 10,
+    "object_id": 84
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 202,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 85
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 203,
+  "fields": {
+    "tag": 21,
+    "content_type": 10,
+    "object_id": 85
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 204,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 86
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 205,
+  "fields": {
+    "tag": 22,
+    "content_type": 10,
+    "object_id": 86
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 206,
+  "fields": {
+    "tag": 83,
+    "content_type": 10,
+    "object_id": 86
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 207,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 87
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 208,
+  "fields": {
+    "tag": 23,
+    "content_type": 10,
+    "object_id": 87
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 209,
+  "fields": {
+    "tag": 84,
+    "content_type": 10,
+    "object_id": 87
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 210,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 88
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 211,
+  "fields": {
+    "tag": 24,
+    "content_type": 10,
+    "object_id": 88
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 212,
+  "fields": {
+    "tag": 85,
+    "content_type": 10,
+    "object_id": 88
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 213,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 89
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 214,
+  "fields": {
+    "tag": 25,
+    "content_type": 10,
+    "object_id": 89
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 215,
+  "fields": {
+    "tag": 86,
+    "content_type": 10,
+    "object_id": 89
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 216,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 90
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 217,
+  "fields": {
+    "tag": 26,
+    "content_type": 10,
+    "object_id": 90
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 218,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 91
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 219,
+  "fields": {
+    "tag": 27,
+    "content_type": 10,
+    "object_id": 91
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 220,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 92
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 221,
+  "fields": {
+    "tag": 28,
+    "content_type": 10,
+    "object_id": 92
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 222,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 93
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 223,
+  "fields": {
+    "tag": 29,
+    "content_type": 10,
+    "object_id": 93
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 224,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 94
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 225,
+  "fields": {
+    "tag": 87,
+    "content_type": 10,
+    "object_id": 94
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 226,
+  "fields": {
+    "tag": 88,
+    "content_type": 10,
+    "object_id": 94
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 227,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 95
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 228,
+  "fields": {
+    "tag": 30,
+    "content_type": 10,
+    "object_id": 95
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 229,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 96
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 230,
+  "fields": {
+    "tag": 31,
+    "content_type": 10,
+    "object_id": 96
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 231,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 97
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 232,
+  "fields": {
+    "tag": 32,
+    "content_type": 10,
+    "object_id": 97
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 233,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 98
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 234,
+  "fields": {
+    "tag": 33,
+    "content_type": 10,
+    "object_id": 98
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 235,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 99
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 236,
+  "fields": {
+    "tag": 34,
+    "content_type": 10,
+    "object_id": 99
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 237,
+  "fields": {
+    "tag": 89,
+    "content_type": 10,
+    "object_id": 99
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 238,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 100
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 239,
+  "fields": {
+    "tag": 35,
+    "content_type": 10,
+    "object_id": 100
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 240,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 101
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 241,
+  "fields": {
+    "tag": 36,
+    "content_type": 10,
+    "object_id": 101
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 242,
+  "fields": {
+    "tag": 90,
+    "content_type": 10,
+    "object_id": 101
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 243,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 102
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 244,
+  "fields": {
+    "tag": 91,
+    "content_type": 10,
+    "object_id": 102
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 245,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 103
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 246,
+  "fields": {
+    "tag": 37,
+    "content_type": 10,
+    "object_id": 103
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 247,
+  "fields": {
+    "tag": 92,
+    "content_type": 10,
+    "object_id": 103
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 248,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 104
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 249,
+  "fields": {
+    "tag": 38,
+    "content_type": 10,
+    "object_id": 104
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 250,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 105
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 251,
+  "fields": {
+    "tag": 39,
+    "content_type": 10,
+    "object_id": 105
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 252,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 106
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 253,
+  "fields": {
+    "tag": 40,
+    "content_type": 10,
+    "object_id": 106
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 254,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 107
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 255,
+  "fields": {
+    "tag": 93,
+    "content_type": 10,
+    "object_id": 107
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 256,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 108
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 257,
+  "fields": {
+    "tag": 41,
+    "content_type": 10,
+    "object_id": 108
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 258,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 109
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 259,
+  "fields": {
+    "tag": 42,
+    "content_type": 10,
+    "object_id": 109
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 260,
+  "fields": {
+    "tag": 94,
+    "content_type": 10,
+    "object_id": 109
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 261,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 110
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 262,
+  "fields": {
+    "tag": 43,
+    "content_type": 10,
+    "object_id": 110
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 263,
+  "fields": {
+    "tag": 95,
+    "content_type": 10,
+    "object_id": 110
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 264,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 111
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 265,
+  "fields": {
+    "tag": 44,
+    "content_type": 10,
+    "object_id": 111
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 266,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 112
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 267,
+  "fields": {
+    "tag": 45,
+    "content_type": 10,
+    "object_id": 112
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 268,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 113
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 269,
+  "fields": {
+    "tag": 46,
+    "content_type": 10,
+    "object_id": 113
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 270,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 114
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 271,
+  "fields": {
+    "tag": 47,
+    "content_type": 10,
+    "object_id": 114
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 272,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 115
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 273,
+  "fields": {
+    "tag": 48,
+    "content_type": 10,
+    "object_id": 115
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 274,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 116
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 275,
+  "fields": {
+    "tag": 49,
+    "content_type": 10,
+    "object_id": 116
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 276,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 117
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 277,
+  "fields": {
+    "tag": 50,
+    "content_type": 10,
+    "object_id": 117
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 278,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 118
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 279,
+  "fields": {
+    "tag": 51,
+    "content_type": 10,
+    "object_id": 118
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 280,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 119
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 281,
+  "fields": {
+    "tag": 52,
+    "content_type": 10,
+    "object_id": 119
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 282,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 120
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 283,
+  "fields": {
+    "tag": 53,
+    "content_type": 10,
+    "object_id": 120
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 284,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 121
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 285,
+  "fields": {
+    "tag": 54,
+    "content_type": 10,
+    "object_id": 121
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 286,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 122
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 287,
+  "fields": {
+    "tag": 96,
+    "content_type": 10,
+    "object_id": 122
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 288,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 123
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 289,
+  "fields": {
+    "tag": 55,
+    "content_type": 10,
+    "object_id": 123
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 290,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 124
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 291,
+  "fields": {
+    "tag": 55,
+    "content_type": 10,
+    "object_id": 124
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 292,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 125
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 293,
+  "fields": {
+    "tag": 55,
+    "content_type": 10,
+    "object_id": 125
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 294,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 126
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 295,
+  "fields": {
+    "tag": 55,
+    "content_type": 10,
+    "object_id": 126
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 296,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 127
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 297,
+  "fields": {
+    "tag": 55,
+    "content_type": 10,
+    "object_id": 127
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 298,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 128
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 299,
+  "fields": {
+    "tag": 57,
+    "content_type": 10,
+    "object_id": 128
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 300,
+  "fields": {
+    "tag": 2,
+    "content_type": 10,
+    "object_id": 128
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 301,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 129
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 302,
+  "fields": {
+    "tag": 97,
+    "content_type": 10,
+    "object_id": 129
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 303,
+  "fields": {
+    "tag": 98,
+    "content_type": 10,
+    "object_id": 129
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 304,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 130
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 305,
+  "fields": {
+    "tag": 97,
+    "content_type": 10,
+    "object_id": 130
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 306,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 131
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 307,
+  "fields": {
+    "tag": 99,
+    "content_type": 10,
+    "object_id": 131
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 308,
+  "fields": {
+    "tag": 100,
+    "content_type": 10,
+    "object_id": 131
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 309,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 132
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 310,
+  "fields": {
+    "tag": 1,
+    "content_type": 10,
+    "object_id": 132
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 311,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 133
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 312,
+  "fields": {
+    "tag": 59,
+    "content_type": 10,
+    "object_id": 133
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 313,
+  "fields": {
+    "tag": 101,
+    "content_type": 10,
+    "object_id": 133
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 314,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 134
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 315,
+  "fields": {
+    "tag": 60,
+    "content_type": 10,
+    "object_id": 134
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 316,
+  "fields": {
+    "tag": 102,
+    "content_type": 10,
+    "object_id": 134
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 317,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 135
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 318,
+  "fields": {
+    "tag": 61,
+    "content_type": 10,
+    "object_id": 135
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 319,
+  "fields": {
+    "tag": 103,
+    "content_type": 10,
+    "object_id": 135
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 320,
+  "fields": {
+    "tag": 104,
+    "content_type": 10,
+    "object_id": 135
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 321,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 136
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 322,
+  "fields": {
+    "tag": 62,
+    "content_type": 10,
+    "object_id": 136
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 323,
+  "fields": {
+    "tag": 105,
+    "content_type": 10,
+    "object_id": 136
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 324,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 137
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 325,
+  "fields": {
+    "tag": 63,
+    "content_type": 10,
+    "object_id": 137
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 326,
+  "fields": {
+    "tag": 106,
+    "content_type": 10,
+    "object_id": 137
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 327,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 138
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 328,
+  "fields": {
+    "tag": 107,
+    "content_type": 10,
+    "object_id": 138
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 329,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 139
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 330,
+  "fields": {
+    "tag": 108,
+    "content_type": 10,
+    "object_id": 139
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 331,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 140
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 332,
+  "fields": {
+    "tag": 109,
+    "content_type": 10,
+    "object_id": 140
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 333,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 141
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 334,
+  "fields": {
+    "tag": 110,
+    "content_type": 10,
+    "object_id": 141
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 335,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 142
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 336,
+  "fields": {
+    "tag": 111,
+    "content_type": 10,
+    "object_id": 142
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 337,
+  "fields": {
+    "tag": 112,
+    "content_type": 10,
+    "object_id": 142
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 338,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 143
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 339,
+  "fields": {
+    "tag": 113,
+    "content_type": 10,
+    "object_id": 143
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 340,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 144
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 341,
+  "fields": {
+    "tag": 114,
+    "content_type": 10,
+    "object_id": 144
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 342,
+  "fields": {
+    "tag": 115,
+    "content_type": 10,
+    "object_id": 144
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 343,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 145
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 344,
+  "fields": {
+    "tag": 116,
+    "content_type": 10,
+    "object_id": 145
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 345,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 146
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 346,
+  "fields": {
+    "tag": 117,
+    "content_type": 10,
+    "object_id": 146
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 347,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 147
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 348,
+  "fields": {
+    "tag": 85,
+    "content_type": 10,
+    "object_id": 147
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 349,
+  "fields": {
+    "tag": 118,
+    "content_type": 10,
+    "object_id": 147
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 350,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 148
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 351,
+  "fields": {
+    "tag": 119,
+    "content_type": 10,
+    "object_id": 148
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 352,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 149
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 353,
+  "fields": {
+    "tag": 120,
+    "content_type": 10,
+    "object_id": 149
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 354,
+  "fields": {
+    "tag": 121,
+    "content_type": 10,
+    "object_id": 149
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 355,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 150
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 356,
+  "fields": {
+    "tag": 122,
+    "content_type": 10,
+    "object_id": 150
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 357,
+  "fields": {
+    "tag": 123,
+    "content_type": 10,
+    "object_id": 150
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 358,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 151
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 359,
+  "fields": {
+    "tag": 124,
+    "content_type": 10,
+    "object_id": 151
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 360,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 152
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 361,
+  "fields": {
+    "tag": 125,
+    "content_type": 10,
+    "object_id": 152
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 362,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 153
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 363,
+  "fields": {
+    "tag": 44,
+    "content_type": 10,
+    "object_id": 153
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 364,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 154
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 365,
+  "fields": {
+    "tag": 126,
+    "content_type": 10,
+    "object_id": 154
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 366,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 155
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 367,
+  "fields": {
+    "tag": 127,
+    "content_type": 10,
+    "object_id": 155
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 368,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 156
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 369,
+  "fields": {
+    "tag": 128,
+    "content_type": 10,
+    "object_id": 156
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 370,
+  "fields": {
+    "tag": 85,
+    "content_type": 10,
+    "object_id": 156
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 371,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 157
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 372,
+  "fields": {
+    "tag": 129,
+    "content_type": 10,
+    "object_id": 157
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 373,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 158
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 374,
+  "fields": {
+    "tag": 130,
+    "content_type": 10,
+    "object_id": 158
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 375,
+  "fields": {
+    "tag": 131,
+    "content_type": 10,
+    "object_id": 158
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 376,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 159
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 377,
+  "fields": {
+    "tag": 54,
+    "content_type": 10,
+    "object_id": 159
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 378,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 160
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 379,
+  "fields": {
+    "tag": 132,
+    "content_type": 10,
+    "object_id": 160
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 380,
+  "fields": {
+    "tag": 133,
+    "content_type": 10,
+    "object_id": 160
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 381,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 161
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 382,
+  "fields": {
+    "tag": 55,
+    "content_type": 10,
+    "object_id": 161
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 383,
+  "fields": {
+    "tag": 56,
+    "content_type": 10,
+    "object_id": 162
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 384,
+  "fields": {
+    "tag": 55,
+    "content_type": 10,
+    "object_id": 162
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 1,
+  "fields": {
+    "name": "Python Basics",
+    "slug": "python-basics",
+    "description": "أساسيات Python من الصفر - المتغيرات، الشروط، الحلقات، الدوال، القوائم، القواميس",
+    "order": 1
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 2,
+  "fields": {
+    "name": "Python OOP",
+    "slug": "python-oop",
+    "description": "البرمجة كائنية التوجه - الكلاسات، الوراثة، تعدد الأشكال، التغليف، التجريد",
+    "order": 2
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 3,
+  "fields": {
+    "name": "Python Advanced",
+    "slug": "python-advanced",
+    "description": "مواضيع متقدمة - الديكورات، المولدات، Lambda، Asyncio، Threading",
+    "order": 3
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 4,
+  "fields": {
+    "name": "Python Projects",
+    "slug": "python-projects",
+    "description": "مشاريع Python عملية كاملة - تطبيقات ويب، بوتات، تحليل بيانات",
+    "order": 4
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 5,
+  "fields": {
+    "name": "Odoo Basics",
+    "slug": "odoo-basics",
+    "description": "أساسيات Odoo - التثبيت، الإعداد، هيكل النظام، النماذج الأساسية",
+    "order": 5
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 6,
+  "fields": {
+    "name": "Odoo Development",
+    "slug": "odoo-development",
+    "description": "تطوير Odoo - إنشاء الوحدات، النماذج، العروض، الصلاحيات",
+    "order": 6
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 7,
+  "fields": {
+    "name": "Odoo Advanced",
+    "slug": "odoo-advanced",
+    "description": "Odoo متقدم - الوراثة، التقارير، API، التكامل، تحسين الأداء",
+    "order": 7
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 8,
+  "fields": {
+    "name": "Odoo Projects",
+    "slug": "odoo-projects",
+    "description": "مشاريع Odoo عملية كاملة - نظام مهام، مخزون، CRM، فواتير، HR",
+    "order": 8
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 70,
+  "fields": {
+    "title": "مقدمة إلى Python وتثبيتها على جميع الأنظمة",
+    "slug": "python",
+    "excerpt": "دليل شامل لتحميل وتثبيت Python على Windows, macOS, Linux مع كتابة أول برنامج",
+    "content": "<h2>ما هي Python؟</h2><p>Python لغة برمجة <strong>عالية المستوى، مفسرة، متعددة الأغراض</strong>. أنشأها Guido van Rossum عام 1991. تستخدمها Google, Netflix, NASA, Instagram.</p><h2>تثبيت Python</h2><h3>Linux</h3><pre><code class=\"language-bash\">sudo apt install python3 python3-pip python3-venv -y\npython3 --version</code></pre><h3>Windows</h3><p>حمل من python.org وفعّل \"Add Python to PATH\"</p><h3>macOS</h3><pre><code class=\"language-bash\">brew install python3</code></pre><h2>أول برنامج</h2><pre><code class=\"language-python\">print(\"Hello, World! 🐍\")\nname = input(\"ما اسمك؟ \")\nprint(f\"أهلاً {name}!\")</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.103Z",
+    "updated_at": "2026-07-22T19:48:40.103Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 71,
+  "fields": {
+    "title": "المعاملات Operators - الدليل الشامل",
+    "slug": "operators",
+    "excerpt": "جميع المعاملات: الحسابية، المقارنة، المنطقية، bitwise، العضوية",
+    "content": "<h2>الحسابية</h2><pre><code class=\"language-python\">a,b=15,4\nprint(a+b,a-b,a*b,a/b)\nprint(a//b,a%b,a**b)</code></pre><h2>المقارنة</h2><pre><code class=\"language-python\">x,y=10,20\nprint(x==y,x!=y,x<y,x>y)</code></pre><h2>المنطقية</h2><pre><code class=\"language-python\">print(True and False)\nprint(True or False)\nprint(not True)</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.134Z",
+    "updated_at": "2026-07-22T19:48:40.134Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 72,
+  "fields": {
+    "title": "الجمل الشرطية if elif else",
+    "slug": "if-elif-else",
+    "excerpt": "اتخاذ القرارات وبناء برامج ذكية تتفاعل مع المستخدم",
+    "content": "<h2>if elif else</h2><pre><code class=\"language-python\">score=85\nif score>=90: grade=\"A\"\nelif score>=80: grade=\"B\"\nelif score>=70: grade=\"C\"\nelse: grade=\"F\"\nprint(f\"تقديرك: {grade}\")</code></pre><h2>Ternary</h2><pre><code class=\"language-python\">status=\"بالغ\" if age>=18 else \"قاصر\"</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.146Z",
+    "updated_at": "2026-07-22T19:48:56.284Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 73,
+  "fields": {
+    "title": "الحلقات التكرارية for و while",
+    "slug": "for-while",
+    "excerpt": "تكرار الأكواد بكفاءة مع break و continue",
+    "content": "<h2>for</h2><pre><code class=\"language-python\">for i in range(5): print(i)\nfor f in [\"تفاح\",\"موز\"]: print(f)</code></pre><h2>while</h2><pre><code class=\"language-python\">n=1\nwhile n<=5:\n    print(n)\n    n+=1</code></pre><h2>break/continue</h2><pre><code class=\"language-python\">for i in range(10):\n    if i==5: break\n    if i==2: continue\n    print(i)</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.159Z",
+    "updated_at": "2026-07-22T19:48:40.159Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 74,
+  "fields": {
+    "title": "الدوال Functions في Python",
+    "slug": "functions-python",
+    "excerpt": "تعريف الدوال، البرامترات، return، lambda، scope",
+    "content": "<h2>تعريف دالة</h2><pre><code class=\"language-python\">def greet(name):\n    return f\"مرحباً {name}!\"\nprint(greet(\"أحمد\"))</code></pre><h2>Default parameters</h2><pre><code class=\"language-python\">def power(x,n=2):\n    return x**n</code></pre><h2>Lambda</h2><pre><code class=\"language-python\">square=lambda x:x**2\nprint(square(5))</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.175Z",
+    "updated_at": "2026-07-22T19:48:40.175Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 75,
+  "fields": {
+    "title": "القوائم Lists وطرقها",
+    "slug": "lists",
+    "excerpt": "إنشاء وإدارة القوائم، slicing، List Comprehension",
+    "content": "<h2>القوائم</h2><pre><code class=\"language-python\">nums=[1,2,3]\nnums.append(4)\nnums.insert(0,0)\nprint(nums[0],nums[-1])\nprint(nums[0:3])</code></pre><h2>List Comprehension</h2><pre><code class=\"language-python\">squares=[x**2 for x in range(10)]\neven=[x for x in range(20) if x%2==0]</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.186Z",
+    "updated_at": "2026-07-22T19:48:40.186Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 76,
+  "fields": {
+    "title": "القواميس Dictionaries",
+    "slug": "dictionaries",
+    "excerpt": "تخزين البيانات كمفتاح-قيمة، طرق القواميس",
+    "content": "<h2>القاموس</h2><pre><code class=\"language-python\">person={\"name\":\"أحمد\",\"age\":30}\nprint(person[\"name\"])\nperson[\"city\"]=\"الرياض\"\nfor k,v in person.items():\n    print(f\"{k}:{v}\")</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.201Z",
+    "updated_at": "2026-07-22T19:48:40.201Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 77,
+  "fields": {
+    "title": "المجموعات Sets و Tuples",
+    "slug": "sets-tuples",
+    "excerpt": "المجموعات لإزالة التكرار، الصفوف الثابتة",
+    "content": "<h2>Sets</h2><pre><code class=\"language-python\">s={1,2,3,3}\na,b={1,2,3},{2,3,4}\nprint(a&b,a|b,a-b)</code></pre><h2>Tuples</h2><pre><code class=\"language-python\">point=(10,20)\nx,y=point</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.217Z",
+    "updated_at": "2026-07-22T19:48:40.217Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 78,
+  "fields": {
+    "title": "السلاسل النصية Strings",
+    "slug": "strings",
+    "excerpt": "التلاعب بالنصوص، f-strings، التقطيع",
+    "content": "<h2>طرق النصوص</h2><pre><code class=\"language-python\">text=\"  Python  \"\nprint(text.strip().upper())\nprint(text.replace(\"Python\",\"Java\"))</code></pre><h2>f-strings</h2><pre><code class=\"language-python\">name=\"أحمد\"\nprint(f\"مرحباً {name}\")</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.229Z",
+    "updated_at": "2026-07-22T19:48:40.230Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 79,
+  "fields": {
+    "title": "التعامل مع الملفات",
+    "slug": "",
+    "excerpt": "قراءة وكتابة الملفات النصية، CSV، with statement",
+    "content": "<h2>قراءة</h2><pre><code class=\"language-python\">with open(\"f.txt\",\"r\",encoding=\"utf-8\") as f:\n    data=f.read()</code></pre><h2>كتابة</h2><pre><code class=\"language-python\">with open(\"o.txt\",\"w\") as f:\n    f.write(\"Hello\")</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.243Z",
+    "updated_at": "2026-07-22T19:48:40.244Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 80,
+  "fields": {
+    "title": "معالجة الأخطاء try except finally",
+    "slug": "try-except-finally",
+    "excerpt": "التعامل مع الاستثناءات بشكل احترافي",
+    "content": "<h2>try except</h2><pre><code class=\"language-python\">try:\n    x=int(input(\"رقم:\"))\n    print(10/x)\nexcept ValueError:\n    print(\"خطأ\")\nexcept ZeroDivisionError:\n    print(\"لا تقسم على صفر\")\nfinally:\n    print(\"انتهى\")</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.261Z",
+    "updated_at": "2026-07-22T19:48:40.261Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 81,
+  "fields": {
+    "title": "الوحدات Modules واستيراد المكتبات",
+    "slug": "modules",
+    "excerpt": "import, from, as, إنشاء وحدة خاصة",
+    "content": "<h2>استيراد</h2><pre><code class=\"language-python\">import math\nprint(math.sqrt(16))\nfrom datetime import datetime\nprint(datetime.now())</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.280Z",
+    "updated_at": "2026-07-22T19:48:40.280Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 82,
+  "fields": {
+    "title": "List Comprehension المتقدم",
+    "slug": "list-comprehension",
+    "excerpt": "قوائم، قواميس، مجموعات بسطر واحد",
+    "content": "<h2>List Comp</h2><pre><code class=\"language-python\">squares=[x**2 for x in range(10)]\neven=[x for x in range(20) if x%2==0]\nd={x:x**2 for x in range(5)}</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.294Z",
+    "updated_at": "2026-07-22T19:48:40.295Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 83,
+  "fields": {
+    "title": "الدوال المضمنة Built-in Functions",
+    "slug": "built-in-functions",
+    "excerpt": "len, max, min, sum, sorted, zip, enumerate, map, filter",
+    "content": "<h2>Built-in</h2><pre><code class=\"language-python\">nums=[1,5,3,9,2]\nprint(len(nums),max(nums),sum(nums))\nprint(sorted(nums,reverse=True))\nfor i,v in enumerate([\"أ\",\"ب\"],1):\n    print(i,v)</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.304Z",
+    "updated_at": "2026-07-22T19:48:40.304Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 84,
+  "fields": {
+    "title": "التعامل مع JSON و CSV",
+    "slug": "json-csv",
+    "excerpt": "قراءة وكتابة JSON و CSV بسهولة",
+    "content": "<h2>JSON</h2><pre><code class=\"language-python\">import json\nd=json.dumps({\"name\":\"أحمد\"},ensure_ascii=False)</code></pre><h2>CSV</h2><pre><code class=\"language-python\">import csv\nwith open(\"d.csv\") as f:\n    r=csv.reader(f)</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.317Z",
+    "updated_at": "2026-07-22T19:48:40.317Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 85,
+  "fields": {
+    "title": "التاريخ والوقت datetime",
+    "slug": "datetime",
+    "excerpt": "التعامل مع التواريخ، timedelta، strftime",
+    "content": "<h2>datetime</h2><pre><code class=\"language-python\">from datetime import datetime,timedelta\nnow=datetime.now()\ntomorrow=now+timedelta(days=1)\nprint(now.strftime(\"%Y-%m-%d %H:%M\"))</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.328Z",
+    "updated_at": "2026-07-22T19:48:40.329Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 86,
+  "fields": {
+    "title": "Virtual Environment و pip",
+    "slug": "virtual-environment-pip",
+    "excerpt": "إنشاء بيئات افتراضية وإدارة الحزم",
+    "content": "<h2>venv</h2><pre><code class=\"language-bash\">python3 -m venv myenv\nsource myenv/bin/activate\npip install requests\npip freeze > requirements.txt\ndeactivate</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.339Z",
+    "updated_at": "2026-07-22T19:48:40.339Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 87,
+  "fields": {
+    "title": "Git و GitHub للمبتدئين",
+    "slug": "git-github",
+    "excerpt": "التحكم بالإصدارات ورفع المشاريع",
+    "content": "<h2>Git</h2><pre><code class=\"language-bash\">git init\ngit add .\ngit commit -m \"init\"\ngit push origin main</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.355Z",
+    "updated_at": "2026-07-22T19:48:40.355Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 88,
+  "fields": {
+    "title": "مكتبة Requests - التعامل مع الويب",
+    "slug": "requests",
+    "excerpt": "جلب البيانات من APIs والتعامل مع HTTP",
+    "content": "<h2>Requests</h2><pre><code class=\"language-python\">import requests\nr=requests.get(\"https://api.github.com\")\nprint(r.status_code,r.json())</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.370Z",
+    "updated_at": "2026-07-22T19:48:40.370Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 89,
+  "fields": {
+    "title": "مكتبة Pillow - معالجة الصور",
+    "slug": "pillow",
+    "excerpt": "تعديل الصور، تصغير، فلاتر",
+    "content": "<h2>Pillow</h2><pre><code class=\"language-python\">from PIL import Image,ImageFilter\nimg=Image.open(\"p.jpg\")\nimg.thumbnail((200,200))\nimg.filter(ImageFilter.BLUR).save(\"b.jpg\")</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.385Z",
+    "updated_at": "2026-07-22T19:48:40.385Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 90,
+  "fields": {
+    "title": "Regular Expressions - Regex",
+    "slug": "regular-expressions-regex",
+    "excerpt": "بحث وتلاعب متقدم بالنصوص",
+    "content": "<h2>Regex</h2><pre><code class=\"language-python\">import re\nt=\"Email: test@mail.com\"\ne=re.findall(r\"\\S+@\\S+\",t)\nprint(e)</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.400Z",
+    "updated_at": "2026-07-22T19:48:40.400Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 91,
+  "fields": {
+    "title": "Python Tips & Tricks",
+    "slug": "python-tips-tricks",
+    "excerpt": "اختصارات وأفضل الممارسات",
+    "content": "<h2>Tips</h2><pre><code class=\"language-python\">a,b=b,a  # swap\nx=y=z=0  # multi assign\ncombined=[*l1,*l2]  # merge</code></pre>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.409Z",
+    "updated_at": "2026-07-22T19:48:40.409Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 92,
+  "fields": {
+    "title": "مراجعة Python Basics",
+    "slug": "python-basics",
+    "excerpt": "مراجعة شاملة لكل الأساسيات",
+    "content": "<h2>مراجعة</h2><p>المتغيرات، الشروط، الحلقات، الدوال، القوائم، القواميس، الملفات، الأخطاء، الوحدات. أنت جاهز لـ OOP!</p>",
+    "featured_image": "",
+    "category": 1,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.419Z",
+    "updated_at": "2026-07-22T19:48:40.419Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 93,
+  "fields": {
+    "title": "مقدمة إلى OOP - البرمجة كائنية التوجه",
+    "slug": "oop",
+    "excerpt": "فهم مفهوم OOP وأهميته في بناء تطبيقات كبيرة",
+    "content": "<h2>OOP</h2><pre><code class=\"language-python\">class Car:\n    def __init__(self,brand):\n        self.brand=brand\n    def drive(self):\n        print(f\"{self.brand} moving\")</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.428Z",
+    "updated_at": "2026-07-22T19:48:40.429Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 94,
+  "fields": {
+    "title": "الكلاسات Classes والكائنات Objects",
+    "slug": "classes-objects",
+    "excerpt": "تعريف الكلاسات وإنشاء نسخ منها",
+    "content": "<h2>Class</h2><pre><code class=\"language-python\">class Student:\n    school=\"CodeNext\"\n    def __init__(self,name):\n        self.name=name</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.443Z",
+    "updated_at": "2026-07-22T19:48:40.444Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 95,
+  "fields": {
+    "title": "Constructor __init__",
+    "slug": "constructor-__init",
+    "excerpt": "الدالة البانية وتهيئة الكائنات",
+    "content": "<h2>__init__</h2><pre><code class=\"language-python\">class Book:\n    def __init__(self,title,author=\"Unknown\"):\n        self.title=title</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.461Z",
+    "updated_at": "2026-07-22T19:48:40.462Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 96,
+  "fields": {
+    "title": "الوراثة Inheritance",
+    "slug": "inheritance",
+    "excerpt": "توريث الخصائص والطرق بين الكلاسات",
+    "content": "<h2>Inheritance</h2><pre><code class=\"language-python\">class Dog(Animal):\n    def speak(self):\n        return \"Woof!\"</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.470Z",
+    "updated_at": "2026-07-22T19:48:40.470Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 97,
+  "fields": {
+    "title": "تعدد الأشكال Polymorphism",
+    "slug": "polymorphism",
+    "excerpt": "نفس الواجهة - سلوكيات مختلفة",
+    "content": "<h2>Polymorphism</h2><pre><code class=\"language-python\">for s in shapes:\n    print(s.area())</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.479Z",
+    "updated_at": "2026-07-22T19:48:40.479Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 98,
+  "fields": {
+    "title": "التغليف Encapsulation",
+    "slug": "encapsulation",
+    "excerpt": "إخفاء البيانات وحمايتها",
+    "content": "<h2>Encapsulation</h2><pre><code class=\"language-python\">class Account:\n    def __init__(self):\n        self.__balance=0</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.490Z",
+    "updated_at": "2026-07-22T19:48:40.490Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 99,
+  "fields": {
+    "title": "التجريد Abstraction مع ABC",
+    "slug": "abstraction-abc",
+    "excerpt": "الكلاسات المجردة والطرق المجردة",
+    "content": "<h2>ABC</h2><pre><code class=\"language-python\">from abc import ABC,abstractmethod\nclass Shape(ABC):\n    @abstractmethod\n    def area(self): pass</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.498Z",
+    "updated_at": "2026-07-22T19:48:40.499Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 100,
+  "fields": {
+    "title": "الخصائص @property",
+    "slug": "property",
+    "excerpt": "Getter و Setter بطريقة Pythonic",
+    "content": "<h2>@property</h2><pre><code class=\"language-python\">@property\ndef area(self):\n    return 3.14*self.r**2</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.514Z",
+    "updated_at": "2026-07-22T19:48:40.515Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 101,
+  "fields": {
+    "title": "Magic Methods - الدوال السحرية",
+    "slug": "magic-methods",
+    "excerpt": "__str__, __repr__, __add__, __eq__, __len__",
+    "content": "<h2>Magic</h2><pre><code class=\"language-python\">def __add__(self,o):\n    return Vector(self.x+o.x)</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.524Z",
+    "updated_at": "2026-07-22T19:48:40.524Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 102,
+  "fields": {
+    "title": "الوراثة المتعددة Multiple Inheritance",
+    "slug": "multiple-inheritance",
+    "excerpt": "تعدد الآباء و MRO",
+    "content": "<h2>MRO</h2><pre><code class=\"language-python\">class D(B,C):\n    pass\nprint(D.__mro__)</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.538Z",
+    "updated_at": "2026-07-22T19:48:40.538Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 103,
+  "fields": {
+    "title": "@classmethod و @staticmethod",
+    "slug": "classmethod-staticmethod",
+    "excerpt": "طرق الكلاس والطرق الثابتة",
+    "content": "<h2>Decorators</h2><pre><code class=\"language-python\">@classmethod\ndef from_str(cls,s):\n    return cls(s)</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.550Z",
+    "updated_at": "2026-07-22T19:48:40.550Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 104,
+  "fields": {
+    "title": "Dataclasses في Python",
+    "slug": "dataclasses-python",
+    "excerpt": "إنشاء كلاسات بيانات بسرعة",
+    "content": "<h2>Dataclass</h2><pre><code class=\"language-python\">from dataclasses import dataclass\n@dataclass\nclass Point:\n    x:float\n    y:float</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.564Z",
+    "updated_at": "2026-07-22T19:48:40.564Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 105,
+  "fields": {
+    "title": "Enum - التعدادات",
+    "slug": "enum",
+    "excerpt": "تعدادات Python لتمثيل الخيارات",
+    "content": "<h2>Enum</h2><pre><code class=\"language-python\">from enum import Enum\nclass Color(Enum):\n    RED=1\n    GREEN=2</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.573Z",
+    "updated_at": "2026-07-22T19:48:40.573Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 106,
+  "fields": {
+    "title": "Design Patterns في Python",
+    "slug": "design-patterns-python",
+    "excerpt": "Singleton, Factory, Observer",
+    "content": "<h2>Singleton</h2><pre><code class=\"language-python\">class Singleton:\n    _instance=None\n    def __new__(cls):\n        if not cls._instance:\n            cls._instance=super().__new__(cls)\n        return cls._instance</code></pre>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.582Z",
+    "updated_at": "2026-07-22T19:48:40.582Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 107,
+  "fields": {
+    "title": "مراجعة Python OOP",
+    "slug": "python-oop",
+    "excerpt": "مراجعة شاملة للبرمجة كائنية التوجه",
+    "content": "<h2>مراجعة OOP</h2><p>الكلاسات، الوراثة، التغليف، تعدد الأشكال، التجريد، الخصائص، الدوال السحرية.</p>",
+    "featured_image": "",
+    "category": 2,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.592Z",
+    "updated_at": "2026-07-22T19:48:40.592Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 108,
+  "fields": {
+    "title": "الديكورات Decorators",
+    "slug": "decorators",
+    "excerpt": "تعديل سلوك الدوال دون تغيير كودها",
+    "content": "<h2>Decorators</h2><pre><code class=\"language-python\">def timer(func):\n    def w(*a,**k):\n        import time\n        s=time.time()\n        r=func(*a,**k)\n        print(f\"{time.time()-s:.4f}s\")\n        return r\n    return w</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.603Z",
+    "updated_at": "2026-07-22T19:48:40.603Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 109,
+  "fields": {
+    "title": "المولدات Generators و yield",
+    "slug": "generators-yield",
+    "excerpt": "توفير الذاكرة مع المولدات",
+    "content": "<h2>Generators</h2><pre><code class=\"language-python\">def fib(limit):\n    a,b=0,1\n    while a<limit:\n        yield a\n        a,b=b,a+b</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.612Z",
+    "updated_at": "2026-07-22T19:48:40.612Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 110,
+  "fields": {
+    "title": "*args و **kwargs",
+    "slug": "args-kwargs",
+    "excerpt": "عدد غير محدود من البرامترات",
+    "content": "<h2>*args</h2><pre><code class=\"language-python\">def f(*args,**kwargs):\n    print(args,kwargs)</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.628Z",
+    "updated_at": "2026-07-22T19:48:40.628Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 111,
+  "fields": {
+    "title": "Context Managers و with",
+    "slug": "context-managers-with",
+    "excerpt": "إدارة الموارد بكفاءة",
+    "content": "<h2>Context Manager</h2><pre><code class=\"language-python\">with open(\"f.txt\") as f:\n    data=f.read()</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.642Z",
+    "updated_at": "2026-07-22T19:48:40.643Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 112,
+  "fields": {
+    "title": "Iterators - المكررات",
+    "slug": "iterators",
+    "excerpt": "__iter__ و __next__",
+    "content": "<h2>Iterators</h2><pre><code class=\"language-python\">class MyIter:\n    def __iter__(self):\n        return self</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.651Z",
+    "updated_at": "2026-07-22T19:48:40.651Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 113,
+  "fields": {
+    "title": "Threading - المعالجة المتعددة",
+    "slug": "threading",
+    "excerpt": "تشغيل مهام متوازية",
+    "content": "<h2>Threading</h2><pre><code class=\"language-python\">import threading\nt=threading.Thread(target=f)\nt.start()\nt.join()</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.660Z",
+    "updated_at": "2026-07-22T19:48:40.661Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 114,
+  "fields": {
+    "title": "Asyncio - البرمجة غير المتزامنة",
+    "slug": "asyncio",
+    "excerpt": "async/await للعمليات I/O",
+    "content": "<h2>Asyncio</h2><pre><code class=\"language-python\">import asyncio\nasync def main():\n    await asyncio.sleep(1)</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.670Z",
+    "updated_at": "2026-07-22T19:48:40.670Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 115,
+  "fields": {
+    "title": "Type Hints - تلميحات الأنواع",
+    "slug": "type-hints",
+    "excerpt": "كتابة كود آمن مع mypy",
+    "content": "<h2>Type Hints</h2><pre><code class=\"language-python\">def greet(name:str)->str:\n    return f\"Hello {name}\"</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.679Z",
+    "updated_at": "2026-07-22T19:48:40.679Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 116,
+  "fields": {
+    "title": "Unittest و Pytest",
+    "slug": "unittest-pytest",
+    "excerpt": "اختبار الكود تلقائياً",
+    "content": "<h2>Testing</h2><pre><code class=\"language-python\">class TestMath(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(1+1,2)</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.687Z",
+    "updated_at": "2026-07-22T19:48:40.688Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 117,
+  "fields": {
+    "title": "Logging - تسجيل الأحداث",
+    "slug": "logging",
+    "excerpt": "تسجيل وتتبع الأخطاء",
+    "content": "<h2>Logging</h2><pre><code class=\"language-python\">import logging\nlogging.basicConfig(level=logging.INFO)\nlogging.info(\"Started\")</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.696Z",
+    "updated_at": "2026-07-22T19:48:40.696Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 118,
+  "fields": {
+    "title": "Environment Variables و .env",
+    "slug": "environment-variables-env",
+    "excerpt": "إدارة الإعدادات السرية",
+    "content": "<h2>.env</h2><pre><code class=\"language-python\">from dotenv import load_dotenv\nimport os\nload_dotenv()\nSECRET=os.getenv(\"KEY\")</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.706Z",
+    "updated_at": "2026-07-22T19:48:40.706Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 119,
+  "fields": {
+    "title": "Web Scraping مع BeautifulSoup",
+    "slug": "web-scraping-beautifulsoup",
+    "excerpt": "جمع البيانات من المواقع",
+    "content": "<h2>Scraping</h2><pre><code class=\"language-python\">from bs4 import BeautifulSoup\nimport requests\nsoup=BeautifulSoup(html,\"html.parser\")</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.715Z",
+    "updated_at": "2026-07-22T19:48:40.716Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 120,
+  "fields": {
+    "title": "FastAPI - بناء REST API",
+    "slug": "fastapi-rest-api",
+    "excerpt": "إنشاء API سريع وعصري",
+    "content": "<h2>FastAPI</h2><pre><code class=\"language-python\">from fastapi import FastAPI\napp=FastAPI()\n@app.get(\"/\")\ndef root():\n    return {\"msg\":\"Hello\"}</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.726Z",
+    "updated_at": "2026-07-22T19:48:40.726Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 121,
+  "fields": {
+    "title": "Docker مع Python",
+    "slug": "docker-python",
+    "excerpt": "حاويات Docker لنشر التطبيقات",
+    "content": "<h2>Docker</h2><pre><code class=\"language-docker\">FROM python:3.12\nWORKDIR /app\nCOPY . .\nRUN pip install -r req.txt\nCMD [\"python\",\"app.py\"]</code></pre>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.736Z",
+    "updated_at": "2026-07-22T19:48:40.737Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 122,
+  "fields": {
+    "title": "مراجعة Python Advanced",
+    "slug": "python-advanced",
+    "excerpt": "مراجعة شاملة للمواضيع المتقدمة",
+    "content": "<h2>مراجعة</h2><p>الديكورات، المولدات، Asyncio، Threading، Type Hints، Testing، Logging، FastAPI، Docker.</p>",
+    "featured_image": "",
+    "category": 3,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.746Z",
+    "updated_at": "2026-07-22T19:48:40.746Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 123,
+  "fields": {
+    "title": "مشروع: To-Do List CLI",
+    "slug": "to-do-list-cli",
+    "excerpt": "تطبيق مهام من سطر الأوامر",
+    "content": "<h2>To-Do CLI</h2><pre><code class=\"language-python\">tasks=[]\nwhile True:\n    c=input(\"> \")\n    if c==\"add\": tasks.append(input(\"Task: \"))\n    elif c==\"list\": [print(f\"{i}.{t}\") for i,t in enumerate(tasks,1)]\n    elif c==\"quit\": break</code></pre>",
+    "featured_image": "",
+    "category": 4,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.759Z",
+    "updated_at": "2026-07-22T19:48:40.759Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 124,
+  "fields": {
+    "title": "مشروع: Web Scraper",
+    "slug": "web-scraper",
+    "excerpt": "جمع بيانات من موقع ويب",
+    "content": "<h2>Scraper</h2><pre><code class=\"language-python\">import requests\nfrom bs4 import BeautifulSoup\nr=requests.get(\"url\")\ns=BeautifulSoup(r.text,\"html.parser\")\nprint(s.title.text)</code></pre>",
+    "featured_image": "",
+    "category": 4,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.769Z",
+    "updated_at": "2026-07-22T19:48:40.769Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 125,
+  "fields": {
+    "title": "مشروع: Telegram Bot",
+    "slug": "telegram-bot",
+    "excerpt": "بوت تيليجرام تفاعلي",
+    "content": "<h2>Bot</h2><pre><code class=\"language-python\">import telebot\nbot=telebot.TeleBot(\"TOKEN\")\n@bot.message_handler(commands=[\"start\"])\ndef start(m):\n    bot.reply_to(m,\"Welcome!\")</code></pre>",
+    "featured_image": "",
+    "category": 4,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.779Z",
+    "updated_at": "2026-07-22T19:48:40.779Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 126,
+  "fields": {
+    "title": "مشروع: Flask Web App",
+    "slug": "flask-web-app",
+    "excerpt": "تطبيق ويب بسيط",
+    "content": "<h2>Flask</h2><pre><code class=\"language-python\">from flask import Flask,render_template\napp=Flask(__name__)\n@app.route(\"/\")\ndef home():\n    return render_template(\"index.html\")</code></pre>",
+    "featured_image": "",
+    "category": 4,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.789Z",
+    "updated_at": "2026-07-22T19:48:40.789Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 127,
+  "fields": {
+    "title": "مشروع: Data Analysis",
+    "slug": "data-analysis",
+    "excerpt": "تحليل بيانات بـ Pandas و Matplotlib",
+    "content": "<h2>Analysis</h2><pre><code class=\"language-python\">import pandas as pd\nimport matplotlib.pyplot as plt\ndf=pd.read_csv(\"data.csv\")\ndf.plot(kind=\"bar\")\nplt.show()</code></pre>",
+    "featured_image": "",
+    "category": 4,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.799Z",
+    "updated_at": "2026-07-22T19:48:40.799Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 128,
+  "fields": {
+    "title": "مقدمة إلى Odoo ERP",
+    "slug": "odoo-erp",
+    "excerpt": "تعرف على نظام Odoo ERP ومميزاته",
+    "content": "<h2>Odoo</h2><p>نظام ERP مفتوح المصدر مبني على Python و PostgreSQL. يوفر 40+ تطبيقاً رسمياً.</p>",
+    "featured_image": "",
+    "category": 5,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.809Z",
+    "updated_at": "2026-07-22T19:49:20.960Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 129,
+  "fields": {
+    "title": "تثبيت Odoo 17 على Ubuntu",
+    "slug": "odoo-17-ubuntu",
+    "excerpt": "دليل تثبيت Odoo من المصدر",
+    "content": "<h2>تثبيت</h2><pre><code class=\"language-bash\">sudo apt install python3 postgresql git\n./odoo-bin -d mydb</code></pre>",
+    "featured_image": "",
+    "category": 5,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.822Z",
+    "updated_at": "2026-07-22T19:49:25.929Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 130,
+  "fields": {
+    "title": "تثبيت Odoo على Windows و macOS",
+    "slug": "odoo-windows-macos",
+    "excerpt": "تثبيت Odoo بالطرق المختلفة",
+    "content": "<h2>Windows</h2><p>مثبت رسمي أو Docker.</p><h2>macOS</h2><pre><code class=\"language-bash\">brew install python3 postgresql\n./odoo-bin -d mydb</code></pre>",
+    "featured_image": "",
+    "category": 5,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.842Z",
+    "updated_at": "2026-07-22T19:49:28.518Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 131,
+  "fields": {
+    "title": "التعرف على واجهة Odoo",
+    "slug": "odoo",
+    "excerpt": "جولة في واجهة Odoo والإعدادات",
+    "content": "<h2>الواجهة</h2><p>Apps, Settings, Developer Mode (?debug=1).</p>",
+    "featured_image": "",
+    "category": 5,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.853Z",
+    "updated_at": "2026-07-22T19:49:31.180Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 132,
+  "fields": {
+    "title": "أساسيات Python لـ Odoo",
+    "slug": "python-odoo",
+    "excerpt": "مفاهيم Python المطلوبة لتطوير Odoo",
+    "content": "<h2>Python</h2><pre><code class=\"language-python\">class MyModel(models.Model):\n    _name=\"my.model\"\n    name=fields.Char(\"Name\")</code></pre>",
+    "featured_image": "",
+    "category": 5,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.875Z",
+    "updated_at": "2026-07-22T19:49:34.202Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 133,
+  "fields": {
+    "title": "أساسيات PostgreSQL لـ Odoo",
+    "slug": "postgresql-odoo",
+    "excerpt": "أوامر SQL الأساسية",
+    "content": "<h2>SQL</h2><pre><code class=\"language-sql\">SELECT * FROM res_partner;\n\\dt\n\\d table_name</code></pre>",
+    "featured_image": "",
+    "category": 5,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.887Z",
+    "updated_at": "2026-07-22T19:49:36.990Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 134,
+  "fields": {
+    "title": "إنشاء أول Model في Odoo",
+    "slug": "model-odoo",
+    "excerpt": "تعريف النماذج والحقول",
+    "content": "<h2>Model</h2><pre><code class=\"language-python\">name=fields.Char(\"Name\",required=True)\nage=fields.Integer(\"Age\")\nprice=fields.Float(\"Price\")</code></pre>",
+    "featured_image": "",
+    "category": 5,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.901Z",
+    "updated_at": "2026-07-22T19:49:40.031Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 135,
+  "fields": {
+    "title": "إنشاء Form View و Tree View",
+    "slug": "form-view-tree-view",
+    "excerpt": "عرض البيانات في Odoo",
+    "content": "<h2>Views</h2><pre><code>&lt;form&gt;&lt;sheet&gt;&lt;field name=\"name\"/&gt;&lt;/sheet&gt;&lt;/form&gt;</code></pre>",
+    "featured_image": "",
+    "category": 5,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.915Z",
+    "updated_at": "2026-07-22T19:48:40.916Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 136,
+  "fields": {
+    "title": "Actions و Menus في Odoo",
+    "slug": "actions-menus-odoo",
+    "excerpt": "ربط العروض بالقوائم",
+    "content": "<h2>Actions</h2><pre><code>&lt;record id=\"action\" model=\"ir.actions.act_window\"&gt;\n  &lt;field name=\"name\"&gt;My Model&lt;/field&gt;\n&lt;/record&gt;</code></pre>",
+    "featured_image": "",
+    "category": 5,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.936Z",
+    "updated_at": "2026-07-22T19:48:40.936Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 137,
+  "fields": {
+    "title": "الصلاحيات ACL في Odoo",
+    "slug": "acl-odoo",
+    "excerpt": "إعداد الأمان وصلاحيات الوصول",
+    "content": "<h2>ACL</h2><pre><code>id,name,model_id,group_id,perm_read,perm_write,perm_create,perm_unlink</code></pre>",
+    "featured_image": "",
+    "category": 5,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.952Z",
+    "updated_at": "2026-07-22T19:48:40.952Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 138,
+  "fields": {
+    "title": "Computed Fields والحقول المحسوبة",
+    "slug": "computed-fields",
+    "excerpt": "حقول تحسب تلقائياً",
+    "content": "<h2>Computed</h2><pre><code class=\"language-python\">@api.depends(\"price\",\"qty\")\ndef _compute_total(self):\n    for r in self:\n        r.total=r.price*r.qty</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.967Z",
+    "updated_at": "2026-07-22T19:49:07.552Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 139,
+  "fields": {
+    "title": "Constraints والتحقق من البيانات",
+    "slug": "constraints",
+    "excerpt": "SQL و Python Constraints",
+    "content": "<h2>Constraints</h2><pre><code class=\"language-python\">_sql_constraints=[(\"unique_name\",\"unique(name)\",\"Error\")]\n\n@api.constrains(\"age\")\ndef _check_age(self):\n    if self.age<0:\n        raise ValidationError(\"Invalid\")</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 1,
+    "created_at": "2026-07-22T19:48:40.979Z",
+    "updated_at": "2026-07-22T19:49:11.147Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 140,
+  "fields": {
+    "title": "Kanban View متقدم",
+    "slug": "kanban-view",
+    "excerpt": "إنشاء لوحات Kanban",
+    "content": "<h2>Kanban</h2><pre><code>&lt;kanban&gt;\n  &lt;templates&gt;\n    &lt;t t-name=\"kanban-box\"&gt;\n      &lt;div&gt;&lt;field name=\"name\"/&gt;&lt;/div&gt;\n    &lt;/t&gt;\n  &lt;/templates&gt;\n&lt;/kanban&gt;</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:40.991Z",
+    "updated_at": "2026-07-22T19:48:40.991Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 141,
+  "fields": {
+    "title": "Search View والفلاتر",
+    "slug": "search-view",
+    "excerpt": "فلاتر وتجميع متقدم",
+    "content": "<h2>Search</h2><pre><code>&lt;search&gt;\n  &lt;field name=\"name\"/&gt;\n  &lt;filter name=\"active\" domain=\"[('active','=',True)]\"/&gt;\n  &lt;group string=\"Group By\"&gt;\n    &lt;filter name=\"by_state\" context=\"{'group_by':'state'}\"/&gt;\n  &lt;/group&gt;\n&lt;/search&gt;</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.004Z",
+    "updated_at": "2026-07-22T19:48:41.004Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 142,
+  "fields": {
+    "title": "الأزرار Buttons وسير العمل",
+    "slug": "buttons",
+    "excerpt": "أزرار مخصصة وتغيير الحالات",
+    "content": "<h2>Buttons</h2><pre><code class=\"language-python\">def action_confirm(self):\n    self.state=\"confirmed\"</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.015Z",
+    "updated_at": "2026-07-22T19:48:41.016Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 143,
+  "fields": {
+    "title": "Wizards - النماذج المؤقتة",
+    "slug": "wizards",
+    "excerpt": "TransientModel والنوافذ المنبثقة",
+    "content": "<h2>Wizard</h2><pre><code class=\"language-python\">class MyWizard(models.TransientModel):\n    _name=\"my.wizard\"\n    data=fields.Char()</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.033Z",
+    "updated_at": "2026-07-22T19:48:41.034Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 144,
+  "fields": {
+    "title": "الترجمة i18n",
+    "slug": "i18n",
+    "excerpt": "ترجمة الوحدة للعربية",
+    "content": "<h2>i18n</h2><pre><code>msgid \"Name\"\nmsgstr \"الاسم\"</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.045Z",
+    "updated_at": "2026-07-22T19:48:41.045Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 145,
+  "fields": {
+    "title": "البيانات الافتراضية XML",
+    "slug": "xml",
+    "excerpt": "تحميل بيانات أولية",
+    "content": "<h2>Data</h2><pre><code>&lt;record id=\"r1\" model=\"my.model\"&gt;\n  &lt;field name=\"name\"&gt;Test&lt;/field&gt;\n&lt;/record&gt;</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.062Z",
+    "updated_at": "2026-07-22T19:48:41.063Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 146,
+  "fields": {
+    "title": "المهام المجدولة Cron Jobs",
+    "slug": "cron-jobs",
+    "excerpt": "تشغيل مهام تلقائية",
+    "content": "<h2>Cron</h2><pre><code>&lt;record id=\"cron\" model=\"ir.cron\"&gt;\n  &lt;field name=\"interval_number\"&gt;1&lt;/field&gt;\n  &lt;field name=\"interval_type\"&gt;days&lt;/field&gt;\n&lt;/record&gt;</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.074Z",
+    "updated_at": "2026-07-22T19:48:41.074Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 147,
+  "fields": {
+    "title": "API خارجي XML-RPC",
+    "slug": "api-xml-rpc",
+    "excerpt": "التكامل مع أنظمة خارجية",
+    "content": "<h2>API</h2><pre><code class=\"language-python\">import xmlrpc.client\nmodels=xmlrpc.client.ServerProxy(f\"{url}/xmlrpc/2/object\")\nuid=models.authenticate(db,user,pass,{})</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.086Z",
+    "updated_at": "2026-07-22T19:48:41.086Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 148,
+  "fields": {
+    "title": "اختبار الوحدة Unit Tests",
+    "slug": "unit-tests",
+    "excerpt": "اختبارات Odoo",
+    "content": "<h2>Tests</h2><pre><code class=\"language-python\">class TestModel(common.TransactionCase):\n    def test_create(self):\n        r=self.env[\"my.model\"].create({\"name\":\"Test\"})\n        self.assertEqual(r.name,\"Test\")</code></pre>",
+    "featured_image": "",
+    "category": 6,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.100Z",
+    "updated_at": "2026-07-22T19:48:41.101Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 149,
+  "fields": {
+    "title": "التقارير QWeb PDF",
+    "slug": "qweb-pdf",
+    "excerpt": "إنشاء تقارير PDF مخصصة",
+    "content": "<h2>Reports</h2><pre><code>&lt;record id=\"report\" model=\"ir.actions.report\"&gt;\n  &lt;field name=\"model\"&gt;my.model&lt;/field&gt;\n  &lt;field name=\"report_type\"&gt;qweb-pdf&lt;/field&gt;\n&lt;/record&gt;</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.112Z",
+    "updated_at": "2026-07-22T19:48:41.112Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 150,
+  "fields": {
+    "title": "Controllers و Routing",
+    "slug": "controllers-routing",
+    "excerpt": "مسارات HTTP مخصصة",
+    "content": "<h2>Controller</h2><pre><code class=\"language-python\">class MyController(http.Controller):\n    @http.route(\"/my-page\",auth=\"public\")\n    def my_page(self):\n        return \"Hello\"</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.130Z",
+    "updated_at": "2026-07-22T19:48:41.130Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 151,
+  "fields": {
+    "title": "Website Builder",
+    "slug": "website-builder",
+    "excerpt": "تطوير صفحات الموقع",
+    "content": "<h2>Website</h2><pre><code>&lt;template id=\"page\"&gt;\n  &lt;t t-call=\"website.layout\"&gt;\n    &lt;h1&gt;My Page&lt;/h1&gt;\n  &lt;/t&gt;\n&lt;/template&gt;</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.147Z",
+    "updated_at": "2026-07-22T19:48:41.147Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 152,
+  "fields": {
+    "title": "الـ Mixins في Odoo",
+    "slug": "mixins-odoo",
+    "excerpt": "استخدام الـ Mixins الجاهزة",
+    "content": "<h2>Mixins</h2><pre><code class=\"language-python\">class MyModel(models.Model):\n    _inherit=[\"mail.thread\",\"mail.activity.mixin\"]</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.160Z",
+    "updated_at": "2026-07-22T19:48:41.160Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 153,
+  "fields": {
+    "title": "Context في Odoo",
+    "slug": "context-odoo",
+    "excerpt": "تمرير البيانات بين الطرق",
+    "content": "<h2>Context</h2><pre><code class=\"language-python\">self.env[\"res.partner\"].with_context(lang=\"ar\").create(vals)</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.173Z",
+    "updated_at": "2026-07-22T19:48:41.173Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 154,
+  "fields": {
+    "title": "Dashboard مخصص",
+    "slug": "dashboard",
+    "excerpt": "لوحة تحكم تفاعلية",
+    "content": "<h2>Dashboard</h2><pre><code>&lt;dashboard&gt;\n  &lt;view type=\"graph\" field=\"state\"/&gt;\n&lt;/dashboard&gt;</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.182Z",
+    "updated_at": "2026-07-22T19:48:41.182Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 155,
+  "fields": {
+    "title": "Abstract Models",
+    "slug": "abstract-models",
+    "excerpt": "نماذج مجردة قابلة لإعادة الاستخدام",
+    "content": "<h2>Abstract</h2><pre><code class=\"language-python\">class BaseModel(models.AbstractModel):\n    _name=\"base.model\"\n    active=fields.Boolean(default=True)</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.194Z",
+    "updated_at": "2026-07-22T19:48:41.194Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 156,
+  "fields": {
+    "title": "REST API خارجي",
+    "slug": "rest-api",
+    "excerpt": "استهلاك REST APIs من Odoo",
+    "content": "<h2>REST</h2><pre><code class=\"language-python\">import requests\nr=requests.get(url,headers={\"Authorization\":\"Bearer token\"})\ndata=r.json()</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.207Z",
+    "updated_at": "2026-07-22T19:48:41.207Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 157,
+  "fields": {
+    "title": "ملف odoo.conf",
+    "slug": "odooconf",
+    "excerpt": "جميع خيارات التكوين",
+    "content": "<h2>odoo.conf</h2><pre><code>[options]\nadmin_passwd=admin\ndb_host=localhost\nworkers=4\nlog_level=info</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.223Z",
+    "updated_at": "2026-07-22T19:48:41.223Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 158,
+  "fields": {
+    "title": "Odoo Shell للتصحيح",
+    "slug": "odoo-shell",
+    "excerpt": "استخدام shell للتفاعل المباشر",
+    "content": "<h2>Shell</h2><pre><code class=\"language-bash\">./odoo-bin shell -d mydb\n>>> env[\"res.partner\"].search([])</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.235Z",
+    "updated_at": "2026-07-22T19:48:41.236Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 159,
+  "fields": {
+    "title": "Docker مع Odoo",
+    "slug": "docker-odoo",
+    "excerpt": "بيئة تطوير Odoo بـ Docker",
+    "content": "<h2>Docker</h2><pre><code class=\"language-yaml\">services:\n  odoo:\n    image: odoo:17.0\n    ports:\n      - \"8069:8069\"\n  db:\n    image: postgres:15</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.253Z",
+    "updated_at": "2026-07-22T19:48:41.254Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 160,
+  "fields": {
+    "title": "تخصيص Theme Odoo",
+    "slug": "theme-odoo",
+    "excerpt": "تغيير شكل وألوان Odoo",
+    "content": "<h2>Theme</h2><pre><code class=\"language-scss\">$primary: #875A7B;\n.o_form_view { border-radius: 12px; }</code></pre>",
+    "featured_image": "",
+    "category": 7,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.263Z",
+    "updated_at": "2026-07-22T19:48:41.263Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 161,
+  "fields": {
+    "title": "مشروع: نظام CRM",
+    "slug": "crm",
+    "excerpt": "إدارة علاقات العملاء",
+    "content": "<h2>CRM</h2><pre><code class=\"language-python\">class Lead(models.Model):\n    _name=\"crm.lead\"\n    name=fields.Char()\n    revenue=fields.Float()\n    stage_id=fields.Many2one(\"crm.stage\")</code></pre>",
+    "featured_image": "",
+    "category": 8,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.283Z",
+    "updated_at": "2026-07-22T19:48:41.283Z",
+    "is_published": true
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 162,
+  "fields": {
+    "title": "مشروع: نظام HR",
+    "slug": "hr",
+    "excerpt": "إدارة الموارد البشرية",
+    "content": "<h2>HR</h2><pre><code class=\"language-python\">class Employee(models.Model):\n    _name=\"hr.employee.custom\"\n    name=fields.Char()\n    salary=fields.Float()\n    leave_ids=fields.One2many(\"hr.leave\",\"employee_id\")</code></pre>",
+    "featured_image": "",
+    "category": 8,
+    "views": 0,
+    "created_at": "2026-07-22T19:48:41.293Z",
+    "updated_at": "2026-07-22T19:48:41.294Z",
+    "is_published": true
+  }
+}
+]
