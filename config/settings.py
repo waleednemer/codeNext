@@ -173,3 +173,22 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DATABASES = {
     'default': dj_database_url.config(default=f"sqlite:///{BASE_DIR}/db.sqlite3", conn_max_age=600)
 }
+
+import os
+
+CREATE_SUPERUSER=True
+DJANGO_SUPERUSER_USERNAME=waleednemer
+DJANGO_SUPERUSER_EMAIL=waleednemer6@gmail.com
+DJANGO_SUPERUSER_PASSWORD=python%!@#MAX7
+
+if os.environ.get("CREATE_SUPERUSER") == "True":
+    from django.contrib.auth import get_user_model
+
+    User = get_user_model()
+
+    username = os.environ.get("DJANGO_SUPERUSER_USERNAME", "admin")
+    email = os.environ.get("DJANGO_SUPERUSER_EMAIL", "waleednemer6@gmail.com")
+    password = os.environ.get("DJANGO_SUPERUSER_PASSWORD", "python%!@#MAX7")
+
+    if not User.objects.filter(username=username).exists():
+        User.objects.create_superuser(username, email, password)
